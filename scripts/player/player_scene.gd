@@ -37,6 +37,8 @@ var debug: bool = true
 # Last collider player looked at
 var last_looked_at: String = ""
 
+var current_signal_amount: float = 0
+
 
 func _ready() -> void:
 	GlobalVar.reset_game()
@@ -49,6 +51,14 @@ func _input(event: InputEvent) -> void:
 	if GlobalVar.is_game_active:
 		if event is InputEventMouseMotion:
 			mouse_delta = event.relative
+
+
+func _process(delta: float) -> void:
+	# Not processing at all if the game isn't active
+	if not GlobalVar.is_game_active:
+		return
+	
+	check_signal_amount()
 
 
 func _physics_process(delta: float) -> void:
@@ -152,3 +162,12 @@ func change_fov(new_fov: float) -> void:
 func warp_backwards() -> void:
 	print("Warping player")
 	global_position = global_position + Vector3(-48, 0, 0)
+
+
+func increase_signal_amount(increased_amount: float) -> void:
+	current_signal_amount += increased_amount
+
+
+func check_signal_amount() -> void:
+	if current_signal_amount >= 100:
+		trigger_game_over()
