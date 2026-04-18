@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://00g6fa84dpbl"]
+
+[ext_resource type="PackedScene" uid="uid://bn2ur7u6lophr" path="res://assets/3d/objects/blend_export/obj_ceiling_sign_big.gltf" id="1_x301q"]
+
+[node name="CeilingSignBig" unique_id=868256813 instance=ExtResource("1_x301q")]

@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://c4hsu7n3lveov"]
+
+[ext_resource type="PackedScene" uid="uid://qscmrvem0cv6" path="res://assets/3d/objects/blend_export/obj_sign_big.gltf" id="1_vnbfw"]
+
+[node name="SignBig" unique_id=799167309 instance=ExtResource("1_vnbfw")]

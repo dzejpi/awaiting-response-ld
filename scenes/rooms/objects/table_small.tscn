@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://djiskf3l3vh4c"]
+
+[ext_resource type="PackedScene" uid="uid://dacafctx324ym" path="res://assets/3d/objects/blend_export/obj_table_small_col.gltf" id="1_4qe7x"]
+
+[node name="TableSmall" unique_id=1479917337 instance=ExtResource("1_4qe7x")]

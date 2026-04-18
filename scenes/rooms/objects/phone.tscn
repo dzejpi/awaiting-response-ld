@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://c8a0x7hr30fvs"]
+
+[ext_resource type="PackedScene" uid="uid://bj0yihmsgoofe" path="res://assets/3d/objects/blend_export/obj_phone.gltf" id="1_hnx3s"]
+
+[node name="Phone" unique_id=1823915594 instance=ExtResource("1_hnx3s")]
