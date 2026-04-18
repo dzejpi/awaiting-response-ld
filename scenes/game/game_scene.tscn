@@ -989,11 +989,29 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -8)
 [node name="CubicleComplete3" parent="Rooms/RoomB/Objects" unique_id=284670695 instance=ExtResource("16_slyvx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -24)
 
-[node name="CubicleComplete31" parent="Rooms/RoomB/Objects" unique_id=1728661544 instance=ExtResource("16_slyvx")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 0, -24)
+[node name="CubicleComplete52" parent="Rooms/RoomB/Objects" unique_id=691108193 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -20)
+
+[node name="CubicleComplete56" parent="Rooms/RoomB/Objects" unique_id=1173025834 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -16)
+
+[node name="CubicleComplete31" parent="Rooms/RoomB/Objects" unique_id=1403149884 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -28)
+
+[node name="CubicleComplete50" parent="Rooms/RoomB/Objects" unique_id=1053594193 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -32)
+
+[node name="CubicleComplete51" parent="Rooms/RoomB/Objects" unique_id=1406256882 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -36)
 
 [node name="CubicleComplete32" parent="Rooms/RoomB/Objects" unique_id=1489117191 instance=ExtResource("16_slyvx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41, 0, -24)
+
+[node name="CubicleComplete53" parent="Rooms/RoomB/Objects" unique_id=290726757 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41, 0, -20)
+
+[node name="CubicleComplete54" parent="Rooms/RoomB/Objects" unique_id=482942320 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41, 0, -28)
 
 [node name="CubicleComplete33" parent="Rooms/RoomB/Objects" unique_id=1327137400 instance=ExtResource("16_slyvx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 0, -32)
@@ -1006,6 +1024,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -40)
 
 [node name="CubicleComplete5" parent="Rooms/RoomB/Objects" unique_id=1785133901 instance=ExtResource("16_slyvx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -54)
+
+[node name="CubicleComplete55" parent="Rooms/RoomB/Objects" unique_id=150655083 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 0, -54)
 
 [node name="CubicleComplete2" parent="Rooms/RoomB/Objects" unique_id=1773579385 instance=ExtResource("16_slyvx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, 6)
