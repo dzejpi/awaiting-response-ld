@@ -50,3 +50,11 @@ func check_signal_amount() -> void:
 	if current_signal >= 100 && !is_game_over:
 		is_game_over = true
 		player_scene.trigger_game_over()
+
+
+func increase_signal_amount(increased_amount: float) -> void:
+	current_signal += increased_amount
+
+
+func move_player_backwards() -> void:
+	player_scene.warp_backwards()

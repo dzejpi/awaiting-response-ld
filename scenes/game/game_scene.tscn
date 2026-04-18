@@ -45,6 +45,7 @@
 [ext_resource type="PackedScene" uid="uid://dyrsjy122lnpc" path="res://scenes/rooms/walls/wall_g_8.tscn" id="37_ts2o8"]
 [ext_resource type="PackedScene" uid="uid://bv4cb0qfh0wc" path="res://scenes/rooms/walls/wall_g_2_doors.tscn" id="38_dlpq4"]
 [ext_resource type="PackedScene" uid="uid://cydkd4h04dvea" path="res://scenes/rooms/ceiling/ceiling_g_1.tscn" id="42_742nn"]
+[ext_resource type="Script" uid="uid://cb6i0exon7d4" path="res://scripts/game/warp_area.gd" id="46_bj7ya"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_psv6s"]
 
@@ -54,9 +55,13 @@ sky_material = SubResource("ProceduralSkyMaterial_psv6s")
 [sub_resource type="Environment" id="Environment_7nmuq"]
 background_mode = 2
 sky = SubResource("Sky_v1kyu")
+fog_enabled = true
 fog_mode = 1
 fog_density = 1.0
 fog_depth_end = 125.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_742nn"]
+size = Vector3(4, 4, 8)
 
 [node name="GameScene" type="Node3D" unique_id=750097938]
 script = ExtResource("1_5lbu1")
@@ -67,6 +72,7 @@ script = ExtResource("1_5lbu1")
 environment = SubResource("Environment_7nmuq")
 
 [node name="Rooms" type="Node3D" parent="." unique_id=82880048]
+metadata/_edit_lock_ = true
 
 [node name="RoomA" type="Node3D" parent="Rooms" unique_id=555801787]
 metadata/_edit_lock_ = true
@@ -1196,6 +1202,15 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 156, 0, -72)
 [node name="Ground1C52" parent="Rooms/RoomC/Ground" unique_id=1499942903 instance=ExtResource("14_lbkq5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 164, 0, -72)
 
+[node name="Ground1C53" parent="Rooms/RoomC/Ground" unique_id=1995234545 instance=ExtResource("14_lbkq5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 172, 0, -72)
+
+[node name="Ground1C54" parent="Rooms/RoomC/Ground" unique_id=1007830030 instance=ExtResource("14_lbkq5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 180, 0, -72)
+
+[node name="Ground1C55" parent="Rooms/RoomC/Ground" unique_id=89000407 instance=ExtResource("14_lbkq5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 188, 0, -72)
+
 [node name="Ground1C8" parent="Rooms/RoomC/Ground" unique_id=1894491977 instance=ExtResource("14_lbkq5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 84, 0, -72)
 
@@ -1447,14 +1462,32 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 160,
 [node name="Wall8C53" parent="Rooms/RoomC/Walls" unique_id=1329120278 instance=ExtResource("15_sq5bl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 152, 0, -76)
 
-[node name="Wall8C54" parent="Rooms/RoomC/Walls" unique_id=1357164044 instance=ExtResource("15_sq5bl")]
+[node name="Wall8C64" parent="Rooms/RoomC/Walls" unique_id=1818891973 instance=ExtResource("15_sq5bl")]
 transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 168, 0, -68)
 
+[node name="Wall8C65" parent="Rooms/RoomC/Walls" unique_id=1355562685 instance=ExtResource("15_sq5bl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 160, 0, -76)
+
+[node name="Wall8C66" parent="Rooms/RoomC/Walls" unique_id=56658915 instance=ExtResource("15_sq5bl")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 176, 0, -68)
+
+[node name="Wall8C67" parent="Rooms/RoomC/Walls" unique_id=1245865295 instance=ExtResource("15_sq5bl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 168, 0, -76)
+
+[node name="Wall8C68" parent="Rooms/RoomC/Walls" unique_id=1221364232 instance=ExtResource("15_sq5bl")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 184, 0, -68)
+
+[node name="Wall8C69" parent="Rooms/RoomC/Walls" unique_id=1846956025 instance=ExtResource("15_sq5bl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 176, 0, -76)
+
+[node name="Wall8C54" parent="Rooms/RoomC/Walls" unique_id=1357164044 instance=ExtResource("15_sq5bl")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 192, 0, -68)
+
 [node name="Wall8C56" parent="Rooms/RoomC/Walls" unique_id=565682911 instance=ExtResource("15_sq5bl")]
-transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, 168, 0, -76)
+transform = Transform3D(1.3113416e-07, 0, -1, 0, 1, 0, 1, 0, 1.3113416e-07, 192, 0, -76)
 
 [node name="Wall8C55" parent="Rooms/RoomC/Walls" unique_id=433138254 instance=ExtResource("15_sq5bl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 160, 0, -76)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 184, 0, -76)
 
 [node name="Wall8C25" parent="Rooms/RoomC/Walls" unique_id=1243355635 instance=ExtResource("15_sq5bl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 88, 0, -76)
@@ -3243,3 +3276,12 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 4, -
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.2531133, -4, 42)
 
 [node name="Interactive" type="Node3D" parent="." unique_id=2140001250]
+
+[node name="WarpArea" type="Area3D" parent="Interactive" unique_id=152358238]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 86, 1, -72)
+script = ExtResource("46_bj7ya")
+
+[node name="WarpAreaShape" type="CollisionShape3D" parent="Interactive/WarpArea" unique_id=57274277]
+shape = SubResource("BoxShape3D_742nn")
+
+[connection signal="body_entered" from="Interactive/WarpArea" to="Interactive/WarpArea" method="_on_body_entered"]

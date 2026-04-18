@@ -147,3 +147,8 @@ func decrease_fov(delta: float) -> void:
 
 func change_fov(new_fov: float) -> void:
 	player_camera.fov = new_fov
+
+
+func warp_backwards() -> void:
+	print("Warping player")
+	global_position = global_position + Vector3(-48, 0, 0)
