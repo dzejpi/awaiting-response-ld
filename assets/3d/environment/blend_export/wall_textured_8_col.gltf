@@ -15,7 +15,7 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"wall_textured_e_8_col"
+			"name":"wall_textured_8_col"
 		}
 	],
 	"materials":[
@@ -32,7 +32,7 @@
 	],
 	"meshes":[
 		{
-			"name":"Cube.021",
+			"name":"Cube.005",
 			"primitives":[
 				{
 					"attributes":{
@@ -130,7 +130,7 @@
 	"buffers":[
 		{
 			"byteLength":3920,
-			"uri":"wall_textured_e_8_col.bin"
+			"uri":"wall_textured_8_col.bin"
 		}
 	]
 }

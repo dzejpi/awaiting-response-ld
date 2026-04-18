@@ -15,7 +15,7 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"wall_textured_e_8_col"
+			"name":"wall_textured_2_doors_col"
 		}
 	],
 	"materials":[
@@ -32,7 +32,7 @@
 	],
 	"meshes":[
 		{
-			"name":"Cube.021",
+			"name":"Cube.028",
 			"primitives":[
 				{
 					"attributes":{
@@ -63,9 +63,9 @@
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":112,
+			"count":50,
 			"max":[
-				8,
+				2,
 				4,
 				0
 			],
@@ -79,45 +79,45 @@
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":112,
+			"count":50,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":112,
+			"count":50,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":168,
+			"count":84,
 			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":1344,
+			"byteLength":600,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":1344,
-			"byteOffset":1344,
+			"byteLength":600,
+			"byteOffset":600,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":896,
-			"byteOffset":2688,
+			"byteLength":400,
+			"byteOffset":1200,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":336,
-			"byteOffset":3584,
+			"byteLength":168,
+			"byteOffset":1600,
 			"target":34963
 		}
 	],
@@ -129,8 +129,8 @@
 	],
 	"buffers":[
 		{
-			"byteLength":3920,
-			"uri":"wall_textured_e_8_col.bin"
+			"byteLength":1768,
+			"uri":"wall_textured_2_doors_col.bin"
 		}
 	]
 }
