@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://cjukh6ntappbc"]
+
+[ext_resource type="PackedScene" uid="uid://c21iwu5878n4r" path="res://assets/3d/objects/blend_export/obj_door_frame_a.gltf" id="1_mrgs8"]
+
+[node name="DoorFrameA" unique_id=1376317643 instance=ExtResource("1_mrgs8")]
