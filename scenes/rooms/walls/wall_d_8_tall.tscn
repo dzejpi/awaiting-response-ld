@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://d0rapmstrmynq"]
+
+[ext_resource type="PackedScene" uid="uid://cfsa803ak4bik" path="res://assets/3d/environment/blend_export/wall_textured_d_8_tall_col.gltf" id="1_1lvvu"]
+
+[node name="Wall8DTall" unique_id=1895120348 instance=ExtResource("1_1lvvu")]
