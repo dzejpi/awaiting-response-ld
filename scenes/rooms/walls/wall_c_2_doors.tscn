@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bmqj4oijwj2io"]
+
+[ext_resource type="PackedScene" uid="uid://dm7h2ptasdwfd" path="res://assets/3d/environment/blend_export/wall_textured_c_2_doors_col.gltf" id="1_si3eh"]
+
+[node name="Wall2CDoors" unique_id=1126116641 instance=ExtResource("1_si3eh")]
