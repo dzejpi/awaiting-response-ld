@@ -13,6 +13,8 @@ const JUMP_VELOCITY: float = 4.5
 
 @onready var game_over_scene: Node2D = $PlayerUI/GameEnd/GameOverScene
 @onready var game_won_scene: Node2D = $PlayerUI/GameEnd/GameWonScene
+@onready var color_rect: ColorRect = $PlayerHead/Camera/CanvasLayer/ColorRect
+
 
 @export var is_fov_dynamic: bool = true
 
@@ -37,7 +39,7 @@ var debug: bool = true
 # Last collider player looked at
 var last_looked_at: String = ""
 
-var current_signal_amount: float = 0
+var current_signal_amount: float = 0.0
 
 
 func _ready() -> void:
@@ -59,6 +61,7 @@ func _process(delta: float) -> void:
 		return
 	
 	check_signal_amount()
+	adjust_shader()
 
 
 func _physics_process(delta: float) -> void:
@@ -172,3 +175,8 @@ func increase_signal_amount(increased_amount: float) -> void:
 func check_signal_amount() -> void:
 	if current_signal_amount >= 100:
 		trigger_game_over()
+
+
+func adjust_shader() -> void:
+	var signal_normalised = clamp(current_signal_amount / 100.0, 0.0, 1.0)
+	color_rect.material.set_shader_parameter("signal_strength", signal_normalised)
