@@ -47,6 +47,7 @@
 [ext_resource type="PackedScene" uid="uid://bv4cb0qfh0wc" path="res://scenes/rooms/walls/wall_g_2_doors.tscn" id="38_dlpq4"]
 [ext_resource type="PackedScene" uid="uid://cydkd4h04dvea" path="res://scenes/rooms/ceiling/ceiling_g_1.tscn" id="42_742nn"]
 [ext_resource type="Script" uid="uid://cb6i0exon7d4" path="res://scripts/game/warp_area.gd" id="46_bj7ya"]
+[ext_resource type="Script" uid="uid://bf1j6vf0drpam" path="res://scripts/game/final_area.gd" id="48_mnts0"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_psv6s"]
 
@@ -62,6 +63,9 @@ fog_depth_end = 125.0
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_742nn"]
 size = Vector3(4, 4, 8)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_slyvx"]
+size = Vector3(22, 4, 4)
 
 [node name="GameScene" type="Node3D" unique_id=750097938]
 script = ExtResource("1_5lbu1")
@@ -3457,4 +3461,13 @@ shape = SubResource("BoxShape3D_742nn")
 [node name="RemovableWall" parent="Interactive/WarpArea" unique_id=1178286448 instance=ExtResource("15_sq5bl")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -54, -1, 4)
 
+[node name="FinalArea" type="Area3D" parent="Interactive" unique_id=1313155201]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, -2, 46)
+script = ExtResource("48_mnts0")
+
+[node name="FinalAreaShape" type="CollisionShape3D" parent="Interactive/FinalArea" unique_id=1248724332]
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, 0, 0, 0)
+shape = SubResource("BoxShape3D_slyvx")
+
 [connection signal="body_entered" from="Interactive/WarpArea" to="Interactive/WarpArea" method="_on_body_entered"]
+[connection signal="body_entered" from="Interactive/FinalArea" to="Interactive/FinalArea" method="_on_body_entered"]
