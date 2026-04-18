@@ -14,6 +14,11 @@ var current_child_count_countdown: float = child_count_countdown
 @onready var ceiling_f: Node3D = $Rooms/RoomF/Ceiling
 @onready var ceiling_g: Node3D = $Rooms/RoomG/Ceiling
 
+# Player
+@onready var player_scene: CharacterBody3D = $PlayerScene
+
+var current_signal: float = 0
+var is_game_over: bool = false
 
 
 func _ready() -> void:
@@ -27,6 +32,8 @@ func _process(delta: float) -> void:
 		else:
 			current_child_count_countdown = child_count_countdown
 			print("Game nodes: " + str(get_child_count()))
+			
+	check_signal_amount()
 
 
 func show_all_ceilings() -> void:
@@ -37,3 +44,9 @@ func show_all_ceilings() -> void:
 	ceiling_e.show()
 	ceiling_f.show()
 	ceiling_g.show()
+
+
+func check_signal_amount() -> void:
+	if current_signal >= 100 && !is_game_over:
+		is_game_over = true
+		player_scene.trigger_game_over()
