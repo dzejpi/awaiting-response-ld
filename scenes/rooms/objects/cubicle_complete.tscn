@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://mh2kfijarfta"]
+
+[ext_resource type="PackedScene" uid="uid://dwlufxh2v275g" path="res://scenes/rooms/objects/table_base.tscn" id="1_nkfs3"]
+[ext_resource type="PackedScene" uid="uid://puat2tw2wokj" path="res://scenes/rooms/objects/table_desk.tscn" id="2_bhpcx"]
+[ext_resource type="PackedScene" uid="uid://b0yrbf72unecl" path="res://scenes/rooms/objects/table_partition.tscn" id="3_k7di0"]
+
+[node name="CubicleComplete" type="Node3D" unique_id=1974370873]
+
+[node name="TableBase" parent="." unique_id=741215150 instance=ExtResource("1_nkfs3")]
+
+[node name="TableDesk" parent="." unique_id=1184190136 instance=ExtResource("2_bhpcx")]
+
+[node name="TablePartition" parent="." unique_id=926032809 instance=ExtResource("3_k7di0")]

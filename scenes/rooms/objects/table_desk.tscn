@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://puat2tw2wokj"]
+
+[ext_resource type="PackedScene" uid="uid://5ertpibdc6fm" path="res://assets/3d/objects/blend_export/obj_table_col.gltf" id="1_q84em"]
+
+[node name="TableDesk" unique_id=1184190136 instance=ExtResource("1_q84em")]

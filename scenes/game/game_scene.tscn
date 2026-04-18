@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://celxqg074v1je" path="res://scenes/rooms/ground/ground_c_1.tscn" id="14_lbkq5"]
 [ext_resource type="PackedScene" uid="uid://dp400g3vfmq1a" path="res://scenes/rooms/walls/wall_c_8.tscn" id="15_sq5bl"]
 [ext_resource type="PackedScene" uid="uid://bnqkd444xq0t6" path="res://scenes/rooms/walls/wall_c_4.tscn" id="16_jruum"]
+[ext_resource type="PackedScene" uid="uid://mh2kfijarfta" path="res://scenes/rooms/objects/cubicle_complete.tscn" id="16_slyvx"]
 [ext_resource type="PackedScene" uid="uid://bws12fpi0dcbn" path="res://scenes/rooms/ceiling/ceiling_c_1.tscn" id="16_wki3x"]
 [ext_resource type="PackedScene" uid="uid://bmqj4oijwj2io" path="res://scenes/rooms/walls/wall_c_2_doors.tscn" id="17_twdok"]
 [ext_resource type="PackedScene" uid="uid://c1wfxiirwnqw7" path="res://scenes/rooms/walls/wall_c_2.tscn" id="18_vbj3e"]
@@ -979,6 +980,155 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94, 0, -60)
 
 [node name="Wall2B2" parent="Rooms/RoomB/Walls" unique_id=423037162 instance=ExtResource("10_ecdjj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 98, 0, -60)
+
+[node name="Objects" type="Node3D" parent="Rooms/RoomB" unique_id=1911949899]
+
+[node name="CubicleComplete" parent="Rooms/RoomB/Objects" unique_id=1974370873 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -8)
+
+[node name="CubicleComplete3" parent="Rooms/RoomB/Objects" unique_id=284670695 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -24)
+
+[node name="CubicleComplete31" parent="Rooms/RoomB/Objects" unique_id=1728661544 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 0, -24)
+
+[node name="CubicleComplete32" parent="Rooms/RoomB/Objects" unique_id=1489117191 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 41, 0, -24)
+
+[node name="CubicleComplete33" parent="Rooms/RoomB/Objects" unique_id=1327137400 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 0, -32)
+
+[node name="CubicleComplete34" parent="Rooms/RoomB/Objects" unique_id=1245570577 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 0, -36)
+
+[node name="CubicleComplete4" parent="Rooms/RoomB/Objects" unique_id=105743279 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -40)
+
+[node name="CubicleComplete5" parent="Rooms/RoomB/Objects" unique_id=1785133901 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, -54)
+
+[node name="CubicleComplete2" parent="Rooms/RoomB/Objects" unique_id=1773579385 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33, 0, 6)
+
+[node name="CubicleComplete6" parent="Rooms/RoomB/Objects" unique_id=90382394 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 0, -8)
+
+[node name="CubicleComplete38" parent="Rooms/RoomB/Objects" unique_id=1799069012 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 53, 0, -8)
+
+[node name="CubicleComplete39" parent="Rooms/RoomB/Objects" unique_id=859249038 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57, 0, -8)
+
+[node name="CubicleComplete7" parent="Rooms/RoomB/Objects" unique_id=930417462 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 0, -24)
+
+[node name="CubicleComplete8" parent="Rooms/RoomB/Objects" unique_id=1663514902 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 0, -40)
+
+[node name="CubicleComplete9" parent="Rooms/RoomB/Objects" unique_id=642939755 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 0, -54)
+
+[node name="CubicleComplete10" parent="Rooms/RoomB/Objects" unique_id=2017325065 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 0, 6)
+
+[node name="CubicleComplete11" parent="Rooms/RoomB/Objects" unique_id=2074954978 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 0, -8)
+
+[node name="CubicleComplete12" parent="Rooms/RoomB/Objects" unique_id=1595369244 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 0, -24)
+
+[node name="CubicleComplete35" parent="Rooms/RoomB/Objects" unique_id=1651496822 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 0, -20)
+
+[node name="CubicleComplete36" parent="Rooms/RoomB/Objects" unique_id=1675326276 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 0, -16)
+
+[node name="CubicleComplete37" parent="Rooms/RoomB/Objects" unique_id=2129938031 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 0, -12)
+
+[node name="CubicleComplete13" parent="Rooms/RoomB/Objects" unique_id=1628040694 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 0, -40)
+
+[node name="CubicleComplete48" parent="Rooms/RoomB/Objects" unique_id=432648109 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69, 0, -40)
+
+[node name="CubicleComplete47" parent="Rooms/RoomB/Objects" unique_id=468758040 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61, 0, -40)
+
+[node name="CubicleComplete14" parent="Rooms/RoomB/Objects" unique_id=52920433 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 0, -54)
+
+[node name="CubicleComplete15" parent="Rooms/RoomB/Objects" unique_id=1828679015 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 0, 6)
+
+[node name="CubicleComplete40" parent="Rooms/RoomB/Objects" unique_id=1300738158 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 69, 0, 6)
+
+[node name="CubicleComplete16" parent="Rooms/RoomB/Objects" unique_id=966083514 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81, 0, -8)
+
+[node name="CubicleComplete41" parent="Rooms/RoomB/Objects" unique_id=1311804079 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81, 0, -4)
+
+[node name="CubicleComplete17" parent="Rooms/RoomB/Objects" unique_id=2041326392 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81, 0, -24)
+
+[node name="CubicleComplete42" parent="Rooms/RoomB/Objects" unique_id=1949713090 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 85, 0, -24)
+
+[node name="CubicleComplete43" parent="Rooms/RoomB/Objects" unique_id=1282010702 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 89, 0, -24)
+
+[node name="CubicleComplete45" parent="Rooms/RoomB/Objects" unique_id=1232038034 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 90, 0, -8)
+
+[node name="CubicleComplete18" parent="Rooms/RoomB/Objects" unique_id=1488659454 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81, 0, -40)
+
+[node name="CubicleComplete30" parent="Rooms/RoomB/Objects" unique_id=272680913 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 77, 0, -40)
+
+[node name="CubicleComplete19" parent="Rooms/RoomB/Objects" unique_id=1220424135 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81, 0, -54)
+
+[node name="CubicleComplete28" parent="Rooms/RoomB/Objects" unique_id=29748677 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81, 0, -44)
+
+[node name="CubicleComplete29" parent="Rooms/RoomB/Objects" unique_id=1717048659 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81, 0, -50)
+
+[node name="CubicleComplete20" parent="Rooms/RoomB/Objects" unique_id=559414652 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 81, 0, 6)
+
+[node name="CubicleComplete21" parent="Rooms/RoomB/Objects" unique_id=1192961885 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 94, 0, -8)
+
+[node name="CubicleComplete46" parent="Rooms/RoomB/Objects" unique_id=486249605 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 98, 0, -8)
+
+[node name="CubicleComplete22" parent="Rooms/RoomB/Objects" unique_id=2077805635 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93, 0, -24)
+
+[node name="CubicleComplete23" parent="Rooms/RoomB/Objects" unique_id=324806396 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93, 0, -42)
+
+[node name="CubicleComplete44" parent="Rooms/RoomB/Objects" unique_id=933035561 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93, 0, -38)
+
+[node name="CubicleComplete49" parent="Rooms/RoomB/Objects" unique_id=530107763 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93, 0, -34)
+
+[node name="CubicleComplete24" parent="Rooms/RoomB/Objects" unique_id=682864047 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93, 0, -54)
+
+[node name="CubicleComplete26" parent="Rooms/RoomB/Objects" unique_id=1640784576 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93, 0, -50)
+
+[node name="CubicleComplete27" parent="Rooms/RoomB/Objects" unique_id=859593174 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93, 0, -46)
+
+[node name="CubicleComplete25" parent="Rooms/RoomB/Objects" unique_id=2139816568 instance=ExtResource("16_slyvx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 93, 0, 6)
 
 [node name="RoomC" type="Node3D" parent="Rooms" unique_id=1130964649]
 metadata/_edit_lock_ = true
