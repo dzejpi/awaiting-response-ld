@@ -3283,4 +3283,7 @@ script = ExtResource("46_bj7ya")
 [node name="WarpAreaShape" type="CollisionShape3D" parent="Interactive/WarpArea" unique_id=57274277]
 shape = SubResource("BoxShape3D_742nn")
 
+[node name="RemovableWall" parent="Interactive/WarpArea" unique_id=1178286448 instance=ExtResource("15_sq5bl")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -54, -1, 4)
+
 [connection signal="body_entered" from="Interactive/WarpArea" to="Interactive/WarpArea" method="_on_body_entered"]
