@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bhp1u88s071u8"]
+
+[ext_resource type="PackedScene" uid="uid://fn4sy5rjp3nk" path="res://assets/3d/environment/blend_export/ground_b_col.gltf" id="1_giged"]
+
+[node name="GroundB1" unique_id=339058758 instance=ExtResource("1_giged")]
