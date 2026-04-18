@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bh2djsyxdhn6l"]
+
+[ext_resource type="PackedScene" uid="uid://dk8nwuxuhttmt" path="res://assets/3d/environment/blend_export/beam_b_col.gltf" id="1_w85ua"]
+
+[node name="BeamB" unique_id=1790169614 instance=ExtResource("1_w85ua")]
