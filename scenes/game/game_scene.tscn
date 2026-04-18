@@ -72,6 +72,7 @@ environment = SubResource("Environment_7nmuq")
 metadata/_edit_lock_ = true
 
 [node name="Ceiling" type="Node3D" parent="Rooms/RoomA" unique_id=598923449]
+visible = false
 
 [node name="Ceiling1A" parent="Rooms/RoomA/Ceiling" unique_id=1381715757 instance=ExtResource("3_ts2o8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, 0)
@@ -302,6 +303,7 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -4, 
 metadata/_edit_lock_ = true
 
 [node name="Ceiling" type="Node3D" parent="Rooms/RoomB" unique_id=1336262138]
+visible = false
 
 [node name="Ceiling1B" parent="Rooms/RoomB/Ceiling" unique_id=1791981663 instance=ExtResource("10_rhyb1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 4, -24)
@@ -977,6 +979,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 98, 0, -60)
 metadata/_edit_lock_ = true
 
 [node name="Ceiling" type="Node3D" parent="Rooms/RoomC" unique_id=1738884446]
+visible = false
 
 [node name="Ceiling1C" parent="Rooms/RoomC/Ceiling" unique_id=580881882 instance=ExtResource("16_wki3x")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 36, 4, -64)
@@ -1517,6 +1520,7 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -16,
 metadata/_edit_lock_ = true
 
 [node name="Ceiling" type="Node3D" parent="Rooms/RoomD" unique_id=1643651863]
+visible = false
 
 [node name="Ceiling1D" parent="Rooms/RoomD/Ceiling" unique_id=740657312 instance=ExtResource("22_7yvqv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 4, -98)
@@ -2096,6 +2100,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 0, -52)
 metadata/_edit_lock_ = true
 
 [node name="Ceiling" type="Node3D" parent="Rooms/RoomE" unique_id=1351401796]
+visible = false
 
 [node name="Ceiling1E" parent="Rooms/RoomE/Ceiling" unique_id=2072656394 instance=ExtResource("35_nji50")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32, 12, -48)
@@ -2966,8 +2971,10 @@ transform = Transform3D(-2.1855695e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855695e-07, -2
 transform = Transform3D(-2.1855695e-07, 0, -1, 0, 1, 0, 1, 0, -2.1855695e-07, -28, 4, 20)
 
 [node name="RoomF" type="Node3D" parent="Rooms" unique_id=1965958382]
+metadata/_edit_lock_ = true
 
 [node name="Ceiling" type="Node3D" parent="Rooms/RoomF" unique_id=807808418]
+visible = false
 
 [node name="Ceiling1F" parent="Rooms/RoomF/Ceiling" unique_id=420212610 instance=ExtResource("36_55da6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -104, 0, 32)
@@ -3172,8 +3179,10 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, -
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, -4, 44)
 
 [node name="RoomG" type="Node3D" parent="Rooms" unique_id=2004269322]
+metadata/_edit_lock_ = true
 
 [node name="Ceiling" type="Node3D" parent="Rooms/RoomG" unique_id=441971612]
+visible = false
 
 [node name="Ceiling1G" parent="Rooms/RoomG/Ceiling" unique_id=833742787 instance=ExtResource("42_742nn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 41)
