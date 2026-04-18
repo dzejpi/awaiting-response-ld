@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://8ovvrts8dwpl" path="res://scripts/game/game_scene.gd" id="1_5lbu1"]
 [ext_resource type="PackedScene" uid="uid://b8tc7q5tq6x8m" path="res://scenes/player/player_scene.tscn" id="2_3l0ia"]
+[ext_resource type="PackedScene" uid="uid://b0po0mmer7r66" path="res://scenes/rooms/ground/ground_a_1.tscn" id="3_ydf3n"]
+[ext_resource type="PackedScene" uid="uid://bgjrcw1pi1vip" path="res://scenes/rooms/walls/wall_a_8.tscn" id="4_6hqhf"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_psv6s"]
 
@@ -19,3 +21,79 @@ script = ExtResource("1_5lbu1")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=474206427]
 environment = SubResource("Environment_7nmuq")
+
+[node name="Rooms" type="Node3D" parent="." unique_id=82880048]
+
+[node name="RoomA" type="Node3D" parent="Rooms" unique_id=555801787]
+
+[node name="Ceiling" type="Node3D" parent="Rooms/RoomA" unique_id=598923449]
+
+[node name="Ground" type="Node3D" parent="Rooms/RoomA" unique_id=579677418]
+
+[node name="Ground1A" parent="Rooms/RoomA/Ground" unique_id=1980082127 instance=ExtResource("3_ydf3n")]
+
+[node name="Ground1A2" parent="Rooms/RoomA/Ground" unique_id=1470919467 instance=ExtResource("3_ydf3n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -8)
+
+[node name="Ground1A3" parent="Rooms/RoomA/Ground" unique_id=775988451 instance=ExtResource("3_ydf3n")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -16)
+
+[node name="Walls" type="Node3D" parent="Rooms/RoomA" unique_id=1939889832]
+
+[node name="Wall8A" parent="Rooms/RoomA/Walls" unique_id=676554100 instance=ExtResource("4_6hqhf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4, 0, 4)
+
+[node name="Wall8A2" parent="Rooms/RoomA/Walls" unique_id=1293704165 instance=ExtResource("4_6hqhf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4, 0, -4)
+
+[node name="Wall8A3" parent="Rooms/RoomA/Walls" unique_id=1642205309 instance=ExtResource("4_6hqhf")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -4, 0, -12)
+
+[node name="Wall8A4" parent="Rooms/RoomA/Walls" unique_id=1306483617 instance=ExtResource("4_6hqhf")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 4.000001, 0, -20)
+
+[node name="Wall8A5" parent="Rooms/RoomA/Walls" unique_id=239430962 instance=ExtResource("4_6hqhf")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 4, 0, -12)
+
+[node name="Wall8A6" parent="Rooms/RoomA/Walls" unique_id=298672384 instance=ExtResource("4_6hqhf")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.9999995, 0, -4)
+
+[node name="RoomB" type="Node3D" parent="Rooms" unique_id=1910834612]
+
+[node name="Ceiling" type="Node3D" parent="Rooms/RoomB" unique_id=1336262138]
+
+[node name="Ground" type="Node3D" parent="Rooms/RoomB" unique_id=1499563933]
+
+[node name="Walls" type="Node3D" parent="Rooms/RoomB" unique_id=1701187715]
+
+[node name="RoomC" type="Node3D" parent="Rooms" unique_id=1130964649]
+
+[node name="Ceiling" type="Node3D" parent="Rooms/RoomC" unique_id=1738884446]
+
+[node name="Ground" type="Node3D" parent="Rooms/RoomC" unique_id=403419155]
+
+[node name="Walls" type="Node3D" parent="Rooms/RoomC" unique_id=1700261571]
+
+[node name="RoomD" type="Node3D" parent="Rooms" unique_id=1925076306]
+
+[node name="Ceiling" type="Node3D" parent="Rooms/RoomD" unique_id=1643651863]
+
+[node name="Ground" type="Node3D" parent="Rooms/RoomD" unique_id=458978074]
+
+[node name="Walls" type="Node3D" parent="Rooms/RoomD" unique_id=2007807855]
+
+[node name="RoomE" type="Node3D" parent="Rooms" unique_id=1953486125]
+
+[node name="Ceiling" type="Node3D" parent="Rooms/RoomE" unique_id=1351401796]
+
+[node name="Ground" type="Node3D" parent="Rooms/RoomE" unique_id=1947295332]
+
+[node name="Walls" type="Node3D" parent="Rooms/RoomE" unique_id=1412452179]
+
+[node name="RoomF" type="Node3D" parent="Rooms" unique_id=1965958382]
+
+[node name="Ceiling" type="Node3D" parent="Rooms/RoomF" unique_id=807808418]
+
+[node name="Ground" type="Node3D" parent="Rooms/RoomF" unique_id=334774935]
+
+[node name="Walls" type="Node3D" parent="Rooms/RoomF" unique_id=1773481578]
