@@ -16,6 +16,7 @@ var current_child_count_countdown: float = child_count_countdown
 
 # Player
 @onready var player_scene: CharacterBody3D = $PlayerScene
+@onready var world_environment: WorldEnvironment = $WorldEnvironment
 
 var current_signal: float = 0
 var is_game_over: bool = false
@@ -23,6 +24,7 @@ var is_game_over: bool = false
 
 func _ready() -> void:
 	show_all_ceilings()
+	world_environment.environment.fog_enabled = true
 
 
 func _process(delta: float) -> void:
@@ -32,7 +34,7 @@ func _process(delta: float) -> void:
 		else:
 			current_child_count_countdown = child_count_countdown
 			print("Game nodes: " + str(get_child_count()))
-			
+	
 	check_signal_amount()
 
 

@@ -55,7 +55,6 @@ sky_material = SubResource("ProceduralSkyMaterial_psv6s")
 [sub_resource type="Environment" id="Environment_7nmuq"]
 background_mode = 2
 sky = SubResource("Sky_v1kyu")
-fog_enabled = true
 fog_mode = 1
 fog_density = 1.0
 fog_depth_end = 125.0
