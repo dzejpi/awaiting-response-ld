@@ -2,4 +2,4 @@
 
 [ext_resource type="PackedScene" uid="uid://xgbfsqvpypvl" path="res://assets/3d/environment/blend_export/wall_textured_e_4_col.gltf" id="1_leeh8"]
 
-[node name="WallE4" unique_id=1876955127 instance=ExtResource("1_leeh8")]
+[node name="Wall4E" unique_id=1876955127 instance=ExtResource("1_leeh8")]

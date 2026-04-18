@@ -2,4 +2,4 @@
 
 [ext_resource type="PackedScene" uid="uid://w4s4e7e4jcyo" path="res://assets/3d/environment/blend_export/ground_a_col.gltf" id="1_sktcs"]
 
-[node name="GroundA1" unique_id=1980082127 instance=ExtResource("1_sktcs")]
+[node name="Ground1A" unique_id=1980082127 instance=ExtResource("1_sktcs")]
