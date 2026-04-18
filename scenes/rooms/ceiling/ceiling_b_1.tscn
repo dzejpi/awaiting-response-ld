@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://itt7npclw28g"]
+
+[ext_resource type="PackedScene" uid="uid://cugkwxm1bunbk" path="res://assets/3d/environment/blend_export/ceiling_b.gltf" id="1_bocmr"]
+
+[node name="Ceiling1B" unique_id=1791981663 instance=ExtResource("1_bocmr")]
