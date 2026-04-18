@@ -21,7 +21,7 @@
 	"materials":[
 		{
 			"doubleSided":true,
-			"name":"material_environment.001",
+			"name":"material_environment",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":0
@@ -55,8 +55,8 @@
 	"images":[
 		{
 			"mimeType":"image/png",
-			"name":"ase_environment_textures.png",
-			"uri":"ase_environment_textures.png.png"
+			"name":"ase_environment_textures",
+			"uri":"ase_environment_textures.png"
 		}
 	],
 	"accessors":[
