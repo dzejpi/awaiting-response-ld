@@ -68,6 +68,7 @@
 [ext_resource type="PackedScene" uid="uid://c62q7bdymhxdp" path="res://scenes/rooms/objects/door_b.tscn" id="63_dgv3i"]
 [ext_resource type="PackedScene" uid="uid://h112eo27xlwv" path="res://scenes/objects/red_button.tscn" id="63_fdbjj"]
 [ext_resource type="PackedScene" uid="uid://cfeej28j2l77p" path="res://scenes/rooms/voice_scene.tscn" id="68_vvjvb"]
+[ext_resource type="PackedScene" uid="uid://dmuixgpi4c4s" path="res://scenes/npc/entity.tscn" id="69_nj4yj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_psv6s"]
 
@@ -4241,6 +4242,11 @@ voice_number = 1
 [node name="VoiceScene4" parent="Interactive/Voices" unique_id=1014629848 instance=ExtResource("68_vvjvb")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -3, -2, 42)
 voice_number = 5
+
+[node name="Entity" type="Node3D" parent="." unique_id=1502292345]
+
+[node name="Entity" parent="Entity" unique_id=265464587 instance=ExtResource("69_nj4yj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.6110764)
 
 [connection signal="body_entered" from="Interactive/WarpArea" to="Interactive/WarpArea" method="_on_body_entered"]
 [connection signal="body_entered" from="Interactive/FinalArea" to="Interactive/FinalArea" method="_on_body_entered"]

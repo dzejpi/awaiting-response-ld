@@ -19,6 +19,10 @@ const JUMP_VELOCITY: float = 4.5
 @onready var audio_negative_feedback: AudioStreamPlayer3D = $PlayerHead/AudioNegativeFeedback
 @onready var audio_behind_player: AudioStreamPlayer3D = $PlayerHead/AudioBehindPlayer
 
+@onready var entity_spawn: Node3D = $EntitySpawn
+@onready var entity: Node3D = $"../Entity/Entity"
+
+
 # 1: I... see... sou...
 const SFX_VOICE_I_SEE_YOU = preload("uid://digeys2irfa07")
 # 2: Well done, keep going
@@ -67,6 +71,10 @@ var player_not_hurt_yet: bool = true
 var player_over_fifty: bool = false
 var player_over_three_quarters: bool = false
 
+var is_game_about_to_be_over: bool = false
+var game_over_countdown: float = 1.25
+var last_spawn_position: Transform3D
+
 
 func _ready() -> void:
 	GlobalVar.reset_game()
@@ -95,6 +103,14 @@ func _process(delta: float) -> void:
 	
 	# Smooth signal interpolation
 	adjust_signals(delta)
+	
+	if is_game_about_to_be_over:
+		if game_over_countdown > 0:
+			game_over_countdown -= delta
+		else:
+			trigger_game_over()
+	else:
+		last_spawn_position = entity_spawn.global_transform
 
 
 func _physics_process(delta: float) -> void:
@@ -199,6 +215,18 @@ func process_collisions() -> void:
 				print("Player is looking at: nothing.")
 
 
+func trigger_game_over_countdown() -> void:
+	print("Game over countdown triggered")
+	is_game_about_to_be_over = true
+	
+	# Rotate camera 180 degrees
+	var target_y = player_camera.rotation_degrees.y + 180.0
+	var tween = create_tween()
+	tween.tween_property(player_camera, "rotation_degrees:y", target_y, 1.0)
+	
+	entity.uncover_entity()
+
+
 func trigger_game_over() -> void:
 	GlobalVar.toggle_game_over()
 	game_over_scene.show_game_over()
@@ -256,7 +284,8 @@ func change_receiving_signal_amount(increased_amount: float) -> void:
 
 func check_signal_amount() -> void:
 	if current_signal_amount >= 100:
-		trigger_game_over()
+		if !is_game_about_to_be_over:
+			trigger_game_over_countdown()
 
 
 func adjust_shader() -> void:
