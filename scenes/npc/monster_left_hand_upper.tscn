@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dves5ipydphoo"]
+
+[ext_resource type="PackedScene" uid="uid://cmmyvumk10nti" path="res://assets/3d/entity/blend_export/monster_left_hand_upper.gltf" id="1_dynlk"]
+
+[node name="MonsterLeftHandUpper" unique_id=137705283 instance=ExtResource("1_dynlk")]

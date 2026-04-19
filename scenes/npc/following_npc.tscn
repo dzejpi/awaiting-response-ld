@@ -1,20 +1,56 @@
 [gd_scene format=3 uid="uid://cbhvsihi4cwvx"]
 
 [ext_resource type="Script" uid="uid://dh4htrbdrolj6" path="res://scripts/npc/following_npc.gd" id="1_otbbd"]
+[ext_resource type="PackedScene" uid="uid://dl3u46gpui6xh" path="res://scenes/npc/monster_head.tscn" id="2_1nm8n"]
+[ext_resource type="PackedScene" uid="uid://ckc5k4xfgie7q" path="res://scenes/npc/monster_left_hand_bottom.tscn" id="3_hh54q"]
+[ext_resource type="PackedScene" uid="uid://dves5ipydphoo" path="res://scenes/npc/monster_left_hand_upper.tscn" id="4_hnct0"]
+[ext_resource type="PackedScene" uid="uid://dyyhsmr7n8vci" path="res://scenes/npc/monster_left_leg_bottom.tscn" id="5_88syu"]
+[ext_resource type="PackedScene" uid="uid://f3p4qcrknd20" path="res://scenes/npc/monster_left_leg_upper.tscn" id="6_mfk4m"]
+[ext_resource type="PackedScene" uid="uid://8holocdvyhrg" path="res://scenes/npc/monster_left_right_bottom.tscn" id="7_lh7mu"]
+[ext_resource type="PackedScene" uid="uid://ky6ctjuqklqv" path="res://scenes/npc/monster_left_right_upper.tscn" id="8_43j2q"]
+[ext_resource type="PackedScene" uid="uid://cbyjk0bei1ajv" path="res://scenes/npc/monster_right_hand_bottom.tscn" id="9_e4v8r"]
+[ext_resource type="PackedScene" uid="uid://cvjwa4jrbwwye" path="res://scenes/npc/monster_right_hand_upper.tscn" id="10_3g6d3"]
+[ext_resource type="PackedScene" uid="uid://eelfjf3tclwc" path="res://scenes/npc/monster_torso.tscn" id="11_7rh8g"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_rym48"]
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_1nm8n"]
+height = 1.5
+radius = 0.25
 
 [node name="FollowingNpc" type="CharacterBody3D" unique_id=1303749296]
 script = ExtResource("1_otbbd")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=2088196089]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+visible = false
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="." unique_id=162898050]
 transform = Transform3D(1, 0, 0, 0, -0.5, -0.866025, 0, 0.866025, -0.5, 0, 0.9, 0)
+visible = false
 radius = 0.25
 height = 0.5
 
 [node name="NpcCollisionShape" type="CollisionShape3D" parent="." unique_id=1356904226]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-shape = SubResource("BoxShape3D_rym48")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.76123047, 0)
+shape = SubResource("CylinderShape3D_1nm8n")
+
+[node name="Entity" type="Node3D" parent="." unique_id=510440847]
+
+[node name="MonsterHead" parent="Entity" unique_id=100784430 instance=ExtResource("2_1nm8n")]
+
+[node name="MonsterLeftHandBottom" parent="Entity" unique_id=11461011 instance=ExtResource("3_hh54q")]
+
+[node name="MonsterLeftHandUpper" parent="Entity" unique_id=137705283 instance=ExtResource("4_hnct0")]
+
+[node name="MonsterLeftLegBottom" parent="Entity" unique_id=815134886 instance=ExtResource("5_88syu")]
+
+[node name="MonsterLeftLegUpper" parent="Entity" unique_id=2140867837 instance=ExtResource("6_mfk4m")]
+
+[node name="MonsterLeftRightBottom" parent="Entity" unique_id=2105334610 instance=ExtResource("7_lh7mu")]
+
+[node name="MonsterLeftRightUpper" parent="Entity" unique_id=1284047687 instance=ExtResource("8_43j2q")]
+
+[node name="MonsterRightHandBottom" parent="Entity" unique_id=1776817197 instance=ExtResource("9_e4v8r")]
+
+[node name="MonsterRightHandUpper" parent="Entity" unique_id=326731571 instance=ExtResource("10_3g6d3")]
+
+[node name="MonsterTorso" parent="Entity" unique_id=336353989 instance=ExtResource("11_7rh8g")]

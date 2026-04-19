@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://ky6ctjuqklqv"]
+
+[ext_resource type="PackedScene" uid="uid://babnsvue1s3hk" path="res://assets/3d/entity/blend_export/monster_left_right_upper.gltf" id="1_rfbpf"]
+
+[node name="MonsterLeftRightUpper" unique_id=1284047687 instance=ExtResource("1_rfbpf")]
