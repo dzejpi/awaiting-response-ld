@@ -51,7 +51,11 @@ mouse_filter = 2
 
 [node name="AudioNegativeFeedback" type="AudioStreamPlayer3D" parent="PlayerHead" unique_id=1038420930]
 stream = ExtResource("3_hv0pn")
-volume_db = -15.0
+volume_db = -16.0
+
+[node name="AudioBehindPlayer" type="AudioStreamPlayer3D" parent="PlayerHead" unique_id=978287186]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4096701, 1)
+volume_db = -20.0
 
 [node name="BodyCollisionShape" type="CollisionShape3D" parent="." unique_id=1982151978]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

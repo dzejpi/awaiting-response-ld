@@ -17,7 +17,20 @@ const JUMP_VELOCITY: float = 4.5
 @onready var color_rect_signal: ColorRect = $PlayerUI/GameUI/ColorRect
 @onready var noise_player: AudioStreamPlayer2D = $NoisePlayer
 @onready var audio_negative_feedback: AudioStreamPlayer3D = $PlayerHead/AudioNegativeFeedback
+@onready var audio_behind_player: AudioStreamPlayer3D = $PlayerHead/AudioBehindPlayer
 
+# 1: I... see... sou...
+const SFX_VOICE_I_SEE_YOU = preload("uid://digeys2irfa07")
+# 2: Well done, keep going
+const SFX_VOICE_KEEP_GOING = preload("uid://doblhiv5wf6we")
+# 3: It's a long walk... try running
+const SFX_VOICE_LONG_WALK = preload("uid://cukd2ktoxpfq1")
+# 4: That's impressive... most of the people stop by now
+const SFX_VOICE_RIGHT_CHOICE = preload("uid://bqnc50djkfl3")
+# 5: Turn around...
+const SFX_VOICE_TURN_AROUND = preload("uid://83d6gejsuoxl")
+# 6: Well done
+const SFX_VOICE_WELL_DONE = preload("uid://chi63tyv2htx0")
 
 @export var is_fov_dynamic: bool = true
 
@@ -246,3 +259,21 @@ func adjust_signals(delta: float) -> void:
 	
 	#print("db_value: " + str(db_value))
 	noise_player.volume_db = db_value
+
+
+func play_voice_message(message: int) -> void:
+	match(message):
+		1:
+			audio_behind_player.stream = SFX_VOICE_I_SEE_YOU
+		2:
+			audio_behind_player.stream = SFX_VOICE_KEEP_GOING
+		3:
+			audio_behind_player.stream = SFX_VOICE_LONG_WALK
+		4:
+			audio_behind_player.stream = SFX_VOICE_RIGHT_CHOICE
+		5:
+			audio_behind_player.stream = SFX_VOICE_TURN_AROUND
+		6:
+			audio_behind_player.stream = SFX_VOICE_WELL_DONE
+	
+	audio_behind_player.play()
