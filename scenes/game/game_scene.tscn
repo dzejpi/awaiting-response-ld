@@ -69,6 +69,9 @@ fog_mode = 1
 fog_density = 1.0
 fog_depth_end = 125.0
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_ismpi"]
+size = Vector3(80, 0.1, 80)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_742nn"]
 size = Vector3(4, 4, 8)
 
@@ -1239,6 +1242,12 @@ transform = Transform3D(0.76243126, 0, -0.6470694, 0, 1, 0, 0.6470694, 0, 0.7624
 
 [node name="ComputerFull13" parent="Rooms/RoomB/Computers" unique_id=481601107 instance=ExtResource("17_vvgy5")]
 transform = Transform3D(0.76243126, 0, -0.6470694, 0, 1, 0, 0.6470694, 0, 0.76243126, 92.85495, 1, -50.56942)
+
+[node name="CeilingCollider" type="StaticBody3D" parent="Rooms/RoomB" unique_id=1379122556]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 4, -22)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Rooms/RoomB/CeilingCollider" unique_id=1535516200]
+shape = SubResource("BoxShape3D_ismpi")
 
 [node name="RoomC" type="Node3D" parent="Rooms" unique_id=1130964649]
 metadata/_edit_lock_ = true
