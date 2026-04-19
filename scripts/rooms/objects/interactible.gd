@@ -5,9 +5,12 @@ extends Node3D
 @export var hurt_amount = 10
 @export var tooltip: String = ""
 
+@onready var object_manager: Node3D = $ObjectManager
+
 
 func interact_with_object() -> void:
 	has_dealt_damage = true
+	tooltip = ""
 
 
 func get_damage_amount():

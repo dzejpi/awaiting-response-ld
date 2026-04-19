@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dk62cuk6ajfll" path="res://assets/3d/objects/blend_export/obj_drain.gltf" id="1_lfadv"]
 [ext_resource type="PackedScene" uid="uid://cj3dopwdsfcto" path="res://scenes/rooms/signal_scene.tscn" id="2_0iur0"]
 [ext_resource type="Script" uid="uid://bpbfhj6qgualt" path="res://scripts/rooms/objects/interactible.gd" id="2_p47w2"]
+[ext_resource type="Script" uid="uid://mno6v1uhfh5f" path="res://scripts/rooms/objects/object_manager_drain.gd" id="4_ycpqd"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_p47w2"]
 size = Vector3(0.5, 0.25, 0.5)
@@ -18,3 +19,6 @@ tooltip = "Press E to answer"
 
 [node name="InteractiveObjectCollider" type="CollisionShape3D" parent="InteractiveObject" index="0" unique_id=446732863]
 shape = SubResource("BoxShape3D_p47w2")
+
+[node name="ObjectManager" type="Node3D" parent="." index="3" unique_id=1283700041]
+script = ExtResource("4_ycpqd")

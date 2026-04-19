@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bj0yihmsgoofe" path="res://assets/3d/objects/blend_export/obj_phone.gltf" id="1_hnx3s"]
 [ext_resource type="PackedScene" uid="uid://cj3dopwdsfcto" path="res://scenes/rooms/signal_scene.tscn" id="2_n0ppv"]
 [ext_resource type="Script" uid="uid://bpbfhj6qgualt" path="res://scripts/rooms/objects/interactible.gd" id="2_xgaob"]
+[ext_resource type="Script" uid="uid://c2d8isb17tkn7" path="res://scripts/rooms/objects/object_manager_phone.gd" id="4_s1p6w"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xgaob"]
 size = Vector3(1, 0.5, 1)
@@ -20,3 +21,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 [node name="InteractiveObjectCollider" type="CollisionShape3D" parent="InteractiveObject" index="0" unique_id=463631465]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2402344, 0)
 shape = SubResource("BoxShape3D_xgaob")
+
+[node name="ObjectManager" type="Node3D" parent="." index="3" unique_id=1194863478]
+script = ExtResource("4_s1p6w")

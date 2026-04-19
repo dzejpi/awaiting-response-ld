@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dwo3wdrpht5fv" path="res://assets/3d/objects/blend_export/obj_red_button.gltf" id="1_sf1vr"]
 [ext_resource type="Script" uid="uid://bpbfhj6qgualt" path="res://scripts/rooms/objects/interactible.gd" id="2_2plpg"]
 [ext_resource type="PackedScene" uid="uid://cj3dopwdsfcto" path="res://scenes/rooms/signal_scene.tscn" id="2_it0e2"]
+[ext_resource type="Script" uid="uid://bg7o5occ4035u" path="res://scripts/rooms/objects/object_manager_button.gd" id="4_7bhjh"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2plpg"]
 size = Vector3(0.5, 0.2, 0.5)
@@ -19,3 +20,6 @@ tooltip = "Press E to press button"
 [node name="InteractiveObjectCollider" type="CollisionShape3D" parent="InteractiveObject" index="0" unique_id=1585463739]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.14404297, 0)
 shape = SubResource("BoxShape3D_2plpg")
+
+[node name="ObjectManager" type="Node3D" parent="." index="3" unique_id=1823477688]
+script = ExtResource("4_7bhjh")

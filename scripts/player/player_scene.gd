@@ -136,6 +136,17 @@ func adjust_camera(delta: float) -> void:
 func process_collisions() -> void:
 	if ray_cast.is_colliding():
 		var collision_object: String = ray_cast.get_collider().name
+		
+		if collision_object == "InteractiveObject":
+			var collision_item = ray_cast.get_collider()
+			var was_object_used: bool = collision_item.get_parent().get_check_was_used()
+			var damage_amount: float = collision_item.get_parent().get_damage_amount()
+			
+			if Input.is_action_just_pressed("object_interact"):
+				if !was_object_used:
+					collision_item.get_parent().interact_with_object()
+					increase_signal_amount(damage_amount)
+		
 		if collision_object != last_looked_at:
 			last_looked_at = collision_object
 			
@@ -143,10 +154,6 @@ func process_collisions() -> void:
 				var object = ray_cast.get_collider()
 				var new_tooltip: String = object.get_parent().get_tooltip()
 				player_tooltip.display_tooltip(new_tooltip, false)
-				
-				if Input.is_action_just_pressed("object_interact"):
-					pass
-				
 			else:
 				player_tooltip.dismiss_tooltip()
 			
@@ -164,11 +171,13 @@ func process_collisions() -> void:
 func trigger_game_over() -> void:
 	GlobalVar.toggle_game_over()
 	game_over_scene.show_game_over()
+	player_tooltip.dismiss_tooltip()
 
 
 func trigger_game_won() -> void:
 	GlobalVar.toggle_game_over()
 	game_won_scene.show_game_won()
+	player_tooltip.dismiss_tooltip()
 
 
 func increase_fov(delta: float) -> void:
