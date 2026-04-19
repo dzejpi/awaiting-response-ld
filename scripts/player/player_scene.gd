@@ -206,3 +206,16 @@ func adjust_signals(delta: float) -> void:
 	current_signal_amount = lerp(current_signal_amount, current_signal_amount_target, adjustment_speed * delta)
 	current_signal_receiving = lerp(current_signal_receiving, current_signal_receiving_target, adjustment_speed * delta)
 	#print("Signal amount: " + str(current_signal_amount) + ", signal receiving: " + str(current_signal_receiving))
+	
+	# Noise sound level
+	var current_signal_receiving_target_converted = current_signal_receiving_target / 100
+	var current_signal_receiving_target_normalised = clamp(current_signal_receiving_target_converted, 0.0, 1.0)
+	
+	var db_value: float
+	if current_signal_receiving_target_normalised <= 0.001:
+		db_value = -80.0
+	else:
+		db_value = linear_to_db(current_signal_receiving_target_normalised)
+	
+	#print("db_value: " + str(db_value))
+	noise_player.volume_db = db_value
