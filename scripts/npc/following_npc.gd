@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 
-@export var is_looking_at_player: bool = false
+@export var is_looking_at_player: bool = true
 # Switch between upright standing NPC or not
 @export var is_looking_freely: bool = false
 @export var is_following_player: bool = false
