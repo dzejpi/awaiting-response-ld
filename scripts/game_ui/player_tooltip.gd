@@ -2,18 +2,22 @@ extends Node2D
 
 
 @onready var tooltip_label: Label = $TooltipLabel
+@onready var tooltip_label_voice: Label = $TooltipLabelVoice
 
 var flashing_speed: float = 1
 var is_flashing: bool = false
 var is_flashing_up: bool = true
 var is_tooltip_visible: bool = false
+var is_voice_tooltip_visible: bool = false
 var action_required: String = ""
 var auto_dismiss_time: float = 0.0
+var auto_voice_dismiss_time: float = 0.0
 
 
 func _ready() -> void:
 	# Tooltip off by default
 	dismiss_tooltip()
+	dismiss_voice_tooltip()
 
 
 func _process(delta) -> void:
@@ -37,6 +41,11 @@ func _process(delta) -> void:
 		auto_dismiss_time -= delta
 		if auto_dismiss_time <= 0.0:
 			dismiss_tooltip()
+	
+	if auto_voice_dismiss_time > 0.0:
+		auto_voice_dismiss_time -= delta
+		if auto_voice_dismiss_time <= 0.0:
+			dismiss_voice_tooltip()
 
 
 func _input(_event) -> void:
@@ -58,7 +67,15 @@ func display_tooltip(tooltip_text: String, tooltip_flashing: bool, action_to_dis
 	action_required = action_to_dismiss
 	auto_dismiss_time = duration
 	is_tooltip_visible = true
-	show()
+	tooltip_label.show()
+
+
+func display_voice_tooltip(tooltip_text: String, duration: float = 0.0) -> void:
+	tooltip_label_voice.text = tooltip_text
+	
+	auto_voice_dismiss_time = duration
+	is_voice_tooltip_visible = true
+	tooltip_label_voice.show()
 
 
 # Hides tooltip and resets values
@@ -68,4 +85,9 @@ func dismiss_tooltip() -> void:
 	auto_dismiss_time = 0.0
 	is_flashing = false
 	is_tooltip_visible = false
-	hide()
+	tooltip_label.hide()
+
+
+func dismiss_voice_tooltip() -> void:
+	tooltip_label_voice.text = ""
+	tooltip_label_voice.hide()

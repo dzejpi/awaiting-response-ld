@@ -13,3 +13,12 @@ theme = ExtResource("2_4njer")
 text = "Placeholder tooltip"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="TooltipLabelVoice" type="Label" parent="." unique_id=529174283]
+offset_top = 48.0
+offset_right = 1280.0
+offset_bottom = 96.0
+theme = ExtResource("2_4njer")
+text = "Placeholder tooltip"
+horizontal_alignment = 1
+vertical_alignment = 1
