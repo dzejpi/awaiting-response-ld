@@ -135,7 +135,17 @@ offset_left = 64.0
 offset_top = 64.0
 offset_right = 1216.0
 offset_bottom = 528.0
-text = "Credits text here."
+text = "Created in 48 hours 
+for Ludum Dare 59
+by DzejPi
+
+Thank you to everyone who helps me to keep going.
+You know who you are.
+Keep going.
+
+Take care. 
+
+Love you, mom."
 horizontal_alignment = 1
 vertical_alignment = 1
 

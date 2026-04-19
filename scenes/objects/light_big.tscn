@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://0dps864g4hnp"]
+
+[ext_resource type="PackedScene" uid="uid://th7xdqwtvun" path="res://assets/3d/objects/blend_export/obj_light_big.gltf" id="1_2x307"]
+
+[node name="LightBig" unique_id=433713529 instance=ExtResource("1_2x307")]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." index="1" unique_id=960988029]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0.44341588, 0, 0)
+spot_range = 10.0
+spot_attenuation = 2.0
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="2" unique_id=846928847]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.43889868, -0.43340874, 0)

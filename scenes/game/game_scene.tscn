@@ -55,7 +55,10 @@
 [ext_resource type="PackedScene" uid="uid://cydkd4h04dvea" path="res://scenes/rooms/ceiling/ceiling_g_1.tscn" id="42_742nn"]
 [ext_resource type="Script" uid="uid://cb6i0exon7d4" path="res://scripts/game/warp_area.gd" id="46_bj7ya"]
 [ext_resource type="Script" uid="uid://bf1j6vf0drpam" path="res://scripts/game/final_area.gd" id="48_mnts0"]
+[ext_resource type="PackedScene" uid="uid://0dps864g4hnp" path="res://scenes/objects/light_big.tscn" id="54_btwwl"]
+[ext_resource type="PackedScene" uid="uid://bb32dm8cf0ak2" path="res://scenes/objects/light_small.tscn" id="55_b7jqs"]
 [ext_resource type="PackedScene" uid="uid://cj3dopwdsfcto" path="res://scenes/rooms/signal_scene.tscn" id="56_ismpi"]
+[ext_resource type="PackedScene" uid="uid://dk6ot6cogeicr" path="res://scenes/objects/sun.tscn" id="56_xb5ko"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_psv6s"]
 
@@ -3714,6 +3717,179 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 4, -
 
 [node name="Wall2GDoors" parent="Rooms/RoomG/Walls" unique_id=1595012182 instance=ExtResource("38_dlpq4")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.2531133, -4, 42)
+
+[node name="Lights" type="Node3D" parent="Rooms" unique_id=981596609]
+
+[node name="LightBig" parent="Rooms/Lights" unique_id=433713529 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -1)
+
+[node name="LightBig2" parent="Rooms/Lights" unique_id=1949065362 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -10)
+
+[node name="LightBig3" parent="Rooms/Lights" unique_id=462259389 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4, -24)
+
+[node name="LightBig4" parent="Rooms/Lights" unique_id=297601459 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 4, -22)
+
+[node name="LightBig5" parent="Rooms/Lights" unique_id=564301060 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 4, -22)
+
+[node name="LightBig6" parent="Rooms/Lights" unique_id=884718566 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 4, -14)
+
+[node name="LightBig7" parent="Rooms/Lights" unique_id=1496916514 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 4, -14)
+
+[node name="LightBig8" parent="Rooms/Lights" unique_id=1588233162 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 4, -14)
+
+[node name="LightBig9" parent="Rooms/Lights" unique_id=1865586139 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 4, -14)
+
+[node name="LightBig10" parent="Rooms/Lights" unique_id=1075146570 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23, 4, -24)
+
+[node name="LightBig11" parent="Rooms/Lights" unique_id=1523864814 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39, 4, -24)
+
+[node name="LightBig12" parent="Rooms/Lights" unique_id=262339773 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39, 4, -8)
+
+[node name="LightBig13" parent="Rooms/Lights" unique_id=1440991218 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39, 4, -40)
+
+[node name="LightBig14" parent="Rooms/Lights" unique_id=677965374 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55, 4, -24)
+
+[node name="LightBig15" parent="Rooms/Lights" unique_id=1213610417 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55, 4, -8)
+
+[node name="LightBig16" parent="Rooms/Lights" unique_id=1464570184 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 55, 4, -40)
+
+[node name="LightBig17" parent="Rooms/Lights" unique_id=750541048 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71, 4, -24)
+
+[node name="LightBig18" parent="Rooms/Lights" unique_id=1719678846 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71, 4, -8)
+
+[node name="LightBig19" parent="Rooms/Lights" unique_id=607670150 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 71, 4, -40)
+
+[node name="LightBig20" parent="Rooms/Lights" unique_id=703448417 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87, 4, -24)
+
+[node name="LightBig21" parent="Rooms/Lights" unique_id=1866647670 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87, 4, -8)
+
+[node name="LightBig22" parent="Rooms/Lights" unique_id=1891278383 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87, 4, -40)
+
+[node name="LightBig23" parent="Rooms/Lights" unique_id=505474540 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87, 4, -66)
+
+[node name="LightBig24" parent="Rooms/Lights" unique_id=2133442843 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 87, 4, -71)
+
+[node name="LightBig25" parent="Rooms/Lights" unique_id=1947676889 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 63, 4, -71)
+
+[node name="LightBig30" parent="Rooms/Lights" unique_id=889698280 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 39, 4, -71)
+
+[node name="LightBig31" parent="Rooms/Lights" unique_id=1555884272 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 4, -88)
+
+[node name="LightBig32" parent="Rooms/Lights" unique_id=1086334838 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 4, -82)
+
+[node name="LightBig33" parent="Rooms/Lights" unique_id=2013445072 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 4, -78)
+
+[node name="LightBig34" parent="Rooms/Lights" unique_id=1083672016 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 4, -92)
+
+[node name="LightBig35" parent="Rooms/Lights" unique_id=1787477761 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 4, -95)
+
+[node name="LightBig36" parent="Rooms/Lights" unique_id=999777725 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 45)
+
+[node name="LightBig26" parent="Rooms/Lights" unique_id=1334176713 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 111, 4, -71)
+
+[node name="LightBig27" parent="Rooms/Lights" unique_id=1114867024 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 135, 4, -71)
+
+[node name="LightBig28" parent="Rooms/Lights" unique_id=1231553433 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 159, 4, -71)
+
+[node name="LightBig29" parent="Rooms/Lights" unique_id=1316029538 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 183, 4, -71)
+
+[node name="LightSmall" parent="Rooms/Lights" unique_id=1248802453 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 4, -105)
+
+[node name="LightSmall2" parent="Rooms/Lights" unique_id=1251824653 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 4, -93)
+
+[node name="LightSmall17" parent="Rooms/Lights" unique_id=294618895 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 4, -93)
+
+[node name="LightSmall19" parent="Rooms/Lights" unique_id=898490434 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 4, -105)
+
+[node name="LightSmall20" parent="Rooms/Lights" unique_id=1677161216 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23, 4, -103)
+
+[node name="LightSmall18" parent="Rooms/Lights" unique_id=1472332564 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 4, -81)
+
+[node name="LightSmall3" parent="Rooms/Lights" unique_id=85203085 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 4, -81)
+
+[node name="LightSmall4" parent="Rooms/Lights" unique_id=1993236131 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 4, -69)
+
+[node name="LightSmall5" parent="Rooms/Lights" unique_id=985486689 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 4, -105)
+
+[node name="LightSmall6" parent="Rooms/Lights" unique_id=885400084 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 4, -93)
+
+[node name="LightSmall7" parent="Rooms/Lights" unique_id=545280079 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 4, -81)
+
+[node name="LightSmall8" parent="Rooms/Lights" unique_id=804328742 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54, 4, -69)
+
+[node name="LightSmall9" parent="Rooms/Lights" unique_id=2081824644 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 4, -105)
+
+[node name="LightSmall10" parent="Rooms/Lights" unique_id=1813065420 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 4, -93)
+
+[node name="LightSmall11" parent="Rooms/Lights" unique_id=1992416381 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 4, -81)
+
+[node name="LightSmall12" parent="Rooms/Lights" unique_id=1502309386 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -66, 4, -69)
+
+[node name="LightSmall13" parent="Rooms/Lights" unique_id=685731204 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 4, -105)
+
+[node name="LightSmall14" parent="Rooms/Lights" unique_id=1284840576 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 4, -93)
+
+[node name="LightSmall15" parent="Rooms/Lights" unique_id=614290678 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 4, -81)
+
+[node name="LightSmall16" parent="Rooms/Lights" unique_id=1706972768 instance=ExtResource("55_b7jqs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -78, 4, -69)
+
+[node name="Sun" parent="Rooms/Lights" unique_id=1094629258 instance=ExtResource("56_xb5ko")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -103, 7, 24)
 
 [node name="Interactive" type="Node3D" parent="." unique_id=2140001250]
 
