@@ -3807,11 +3807,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 4, -82)
 [node name="LightBig33" parent="Rooms/Lights" unique_id=2013445072 instance=ExtResource("54_btwwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 4, -78)
 
+[node name="LightBig38" parent="Rooms/Lights" unique_id=2047914618 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 4, -73)
+
 [node name="LightBig34" parent="Rooms/Lights" unique_id=1083672016 instance=ExtResource("54_btwwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 4, -92)
 
 [node name="LightBig35" parent="Rooms/Lights" unique_id=1787477761 instance=ExtResource("54_btwwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 4, -95)
+
+[node name="LightBig37" parent="Rooms/Lights" unique_id=1410720159 instance=ExtResource("54_btwwl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 4, -99)
 
 [node name="LightBig36" parent="Rooms/Lights" unique_id=999777725 instance=ExtResource("54_btwwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 45)
@@ -3903,6 +3909,9 @@ shape = SubResource("BoxShape3D_742nn")
 [node name="RemovableWall" parent="Interactive/WarpArea" unique_id=1178286448 instance=ExtResource("15_sq5bl")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -54, -1, 4)
 
+[node name="SignalScene" parent="Interactive/WarpArea" unique_id=1797278511 instance=ExtResource("56_ismpi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.286705, 0, 0)
+
 [node name="FinalArea" type="Area3D" parent="Interactive" unique_id=1313155201]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, -2, 46)
 script = ExtResource("48_mnts0")
@@ -3913,8 +3922,11 @@ shape = SubResource("BoxShape3D_slyvx")
 
 [node name="Signals" type="Node3D" parent="Interactive" unique_id=1566991691]
 
-[node name="SignalScene" parent="Interactive/Signals" unique_id=1797278511 instance=ExtResource("56_ismpi")]
+[node name="SignalScene" parent="Interactive/Signals" unique_id=1716548702 instance=ExtResource("56_ismpi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11)
+
+[node name="SignalScene2" parent="Interactive/Signals" unique_id=1898432697 instance=ExtResource("56_ismpi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -102)
 
 [connection signal="body_entered" from="Interactive/WarpArea" to="Interactive/WarpArea" method="_on_body_entered"]
 [connection signal="body_entered" from="Interactive/FinalArea" to="Interactive/FinalArea" method="_on_body_entered"]
