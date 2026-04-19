@@ -2661,14 +2661,8 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -48,
 [node name="Drain" parent="Rooms/RoomD/Drains" unique_id=583795147 instance=ExtResource("37_aqqoi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, -4, -83)
 
-[node name="Drain2" parent="Rooms/RoomD/Drains" unique_id=1877446292 instance=ExtResource("37_aqqoi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, -4, -79)
-
 [node name="Drain11" parent="Rooms/RoomD/Drains" unique_id=1621710913 instance=ExtResource("37_aqqoi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, -4, -83)
-
-[node name="Drain12" parent="Rooms/RoomD/Drains" unique_id=824988913 instance=ExtResource("37_aqqoi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56, -4, -83)
 
 [node name="Drain7" parent="Rooms/RoomD/Drains" unique_id=2012210191 instance=ExtResource("37_aqqoi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, -4, -79)
@@ -2676,14 +2670,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, -4, -79)
 [node name="Drain3" parent="Rooms/RoomD/Drains" unique_id=1475571523 instance=ExtResource("37_aqqoi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, -4, -75)
 
-[node name="Drain4" parent="Rooms/RoomD/Drains" unique_id=297100821 instance=ExtResource("37_aqqoi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48, -4, -75)
-
 [node name="Drain5" parent="Rooms/RoomD/Drains" unique_id=1798166405 instance=ExtResource("37_aqqoi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, -4, -75)
-
-[node name="Drain6" parent="Rooms/RoomD/Drains" unique_id=942388682 instance=ExtResource("37_aqqoi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -56, -4, -75)
 
 [node name="Drain8" parent="Rooms/RoomD/Drains" unique_id=255688044 instance=ExtResource("37_aqqoi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, -4, -65)
@@ -2691,11 +2679,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -52, -4, -65)
 [node name="Drain9" parent="Rooms/RoomD/Drains" unique_id=2085985136 instance=ExtResource("37_aqqoi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80, -4, -70)
 
-[node name="Drain13" parent="Rooms/RoomD/Drains" unique_id=2144854268 instance=ExtResource("37_aqqoi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80, -4, -74)
-
 [node name="Drain14" parent="Rooms/RoomD/Drains" unique_id=332923422 instance=ExtResource("37_aqqoi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80, -4, -78)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80, -4, -82)
 
 [node name="Drain10" parent="Rooms/RoomD/Drains" unique_id=316626397 instance=ExtResource("37_aqqoi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -80, -4, -104)
@@ -4173,9 +4158,6 @@ transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70
 shape = SubResource("BoxShape3D_slyvx")
 
 [node name="Signals" type="Node3D" parent="Interactive" unique_id=1566991691]
-
-[node name="SignalScene" parent="Interactive/Signals" unique_id=1716548702 instance=ExtResource("56_ismpi")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11)
 
 [node name="SignalScene2" parent="Interactive/Signals" unique_id=1898432697 instance=ExtResource("56_ismpi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22, 0, -102)

@@ -3,18 +3,19 @@
 [ext_resource type="Script" uid="uid://bfyn8bb7me4lq" path="res://scripts/rooms/signal_scene.gd" id="1_wde7h"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_wde7h"]
-radius = 3.0
+radius = 6.0
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_in4tq"]
-radius = 2.0
+radius = 4.0
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_i0pgo"]
-radius = 1.0
+radius = 2.0
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_rutwb"]
-radius = 0.75
+radius = 1.5
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_l6ite"]
+radius = 1.0
 
 [node name="SignalScene" type="Node3D" unique_id=1797278511]
 script = ExtResource("1_wde7h")
