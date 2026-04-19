@@ -176,7 +176,7 @@ func warp_backwards() -> void:
 
 
 func increase_signal_amount(increased_amount: float) -> void:
-	current_signal_amount_target += current_signal_amount + increased_amount
+	current_signal_amount_target += increased_amount
 	#print("Signal increased to: " + str(current_signal_amount))
 
 
