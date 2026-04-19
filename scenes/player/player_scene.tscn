@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://d0k77qlot24nc" path="res://scenes/game_ui/typewriter_dialog_scene.tscn" id="4_x0qso"]
 [ext_resource type="PackedScene" uid="uid://uqsnfk54cjss" path="res://scenes/game_ui/player_tooltip.tscn" id="6_km5q6"]
 [ext_resource type="Shader" uid="uid://cxc40mu45m23c" path="res://shaders/sine_wave.gdshader" id="8_0upga"]
+[ext_resource type="AudioStream" uid="uid://d27qsxtd06h8c" path="res://assets/sfx/sfx_noise.mp3" id="9_fl557"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wh6ij"]
 shader = ExtResource("2_wh6ij")
@@ -79,3 +80,6 @@ offset_left = 992.0
 offset_top = 32.0
 offset_right = 1248.0
 offset_bottom = 96.0
+
+[node name="NoisePlayer" type="AudioStreamPlayer2D" parent="." unique_id=473729899]
+stream = ExtResource("9_fl557")

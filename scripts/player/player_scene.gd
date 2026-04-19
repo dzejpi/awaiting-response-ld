@@ -15,6 +15,7 @@ const JUMP_VELOCITY: float = 4.5
 @onready var game_won_scene: Node2D = $PlayerUI/GameEnd/GameWonScene
 @onready var color_rect: ColorRect = $PlayerHead/Camera/CanvasLayer/ColorRect
 @onready var color_rect_signal: ColorRect = $PlayerUI/GameUI/ColorRect
+@onready var noise_player: AudioStreamPlayer2D = $NoisePlayer
 
 
 @export var is_fov_dynamic: bool = true
@@ -47,11 +48,13 @@ var current_signal_receiving: float = 0.0
 var current_signal_amount_target: float = 0.0
 var current_signal_receiving_target: float = 0.0
 
+
 func _ready() -> void:
 	GlobalVar.reset_game()
 	player_camera.fov = current_fov
 	TransitionOverlay.fade_out()
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	noise_player.playing = true
 
 
 func _input(event: InputEvent) -> void:
