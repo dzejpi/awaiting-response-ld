@@ -1240,62 +1240,23 @@ transform = Transform3D(-0.7624313, 0, 0.64706933, 0, 1, 0, -0.64706933, 0, -0.7
 [node name="ComputerFull6" parent="Rooms/RoomB/Computers" unique_id=529255449 instance=ExtResource("17_vvgy5")]
 transform = Transform3D(-0.7624313, 0, 0.64706933, 0, 1, 0, -0.64706933, 0, -0.7624313, 92.85495, 1, -53.56942)
 
-[node name="ComputerFull7" parent="Rooms/RoomB/Computers" unique_id=115067721 instance=ExtResource("17_vvgy5")]
-transform = Transform3D(-0.7624313, 0, 0.64706933, 0, 1, 0, -0.64706933, 0, -0.7624313, 92.85495, 1, -49.56942)
-
-[node name="ComputerFull8" parent="Rooms/RoomB/Computers" unique_id=695726688 instance=ExtResource("17_vvgy5")]
-transform = Transform3D(-0.7624313, 0, 0.64706933, 0, 1, 0, -0.64706933, 0, -0.7624313, 92.85495, 1, -45.56942)
-
-[node name="ComputerFull9" parent="Rooms/RoomB/Computers" unique_id=390092176 instance=ExtResource("17_vvgy5")]
-transform = Transform3D(-0.7624313, 0, 0.64706933, 0, 1, 0, -0.64706933, 0, -0.7624313, 92.85495, 1, -41.56942)
-
 [node name="ComputerFull10" parent="Rooms/RoomB/Computers" unique_id=1563201529 instance=ExtResource("17_vvgy5")]
 transform = Transform3D(0.76243126, 0, -0.6470694, 0, 1, 0, 0.6470694, 0, 0.76243126, 92.85495, 1, -38.56942)
 
 [node name="ComputerFull14" parent="Rooms/RoomB/Computers" unique_id=759170302 instance=ExtResource("17_vvgy5")]
 transform = Transform3D(-0.64706945, 0, -0.7624312, 0, 1, 0, 0.7624312, 0, -0.64706945, 81.55641, 1, -39.921368)
 
-[node name="ComputerFull15" parent="Rooms/RoomB/Computers" unique_id=1031740952 instance=ExtResource("17_vvgy5")]
-transform = Transform3D(-0.76243114, 0, 0.6470695, 0, 1, 0, -0.6470695, 0, -0.76243114, 80.86949, 1, -39.606617)
-
 [node name="ComputerFull16" parent="Rooms/RoomB/Computers" unique_id=1545360918 instance=ExtResource("17_vvgy5")]
 transform = Transform3D(-0.76243114, 0, 0.6470695, 0, 1, 0, -0.6470695, 0, -0.76243114, 48.86949, 1, -39.606617)
-
-[node name="ComputerFull17" parent="Rooms/RoomB/Computers" unique_id=884210347 instance=ExtResource("17_vvgy5")]
-transform = Transform3D(-0.76243114, 0, 0.6470695, 0, 1, 0, -0.6470695, 0, -0.76243114, 48.86949, 1, -35.606617)
 
 [node name="ComputerFull18" parent="Rooms/RoomB/Computers" unique_id=282017917 instance=ExtResource("17_vvgy5")]
 transform = Transform3D(-0.76243114, 0, 0.6470695, 0, 1, 0, -0.6470695, 0, -0.76243114, 32.86949, 1, -39.606617)
 
-[node name="ComputerFull19" parent="Rooms/RoomB/Computers" unique_id=545412982 instance=ExtResource("17_vvgy5")]
-transform = Transform3D(-0.76243114, 0, 0.6470695, 0, 1, 0, -0.6470695, 0, -0.76243114, 32.86949, 1, -35.606617)
-
-[node name="ComputerFull20" parent="Rooms/RoomB/Computers" unique_id=2138186952 instance=ExtResource("17_vvgy5")]
-transform = Transform3D(-0.76243114, 0, 0.6470695, 0, 1, 0, -0.6470695, 0, -0.76243114, 32.86949, 1, -19.606617)
-
 [node name="ComputerFull22" parent="Rooms/RoomB/Computers" unique_id=812191462 instance=ExtResource("17_vvgy5")]
 transform = Transform3D(-0.76243114, 0, 0.6470695, 0, 1, 0, -0.6470695, 0, -0.76243114, 32.86949, 1, -23.606617)
 
-[node name="ComputerFull23" parent="Rooms/RoomB/Computers" unique_id=1218104574 instance=ExtResource("17_vvgy5")]
-transform = Transform3D(-0.6470694, 0, -0.7624311, 0, 1, 0, 0.7624311, 0, -0.6470694, 33.444088, 1, -23.908003)
-
-[node name="ComputerFull25" parent="Rooms/RoomB/Computers" unique_id=1105136584 instance=ExtResource("17_vvgy5")]
-transform = Transform3D(0.7768383, 0, -0.62970036, 0, 1, 0, 0.62970036, 0, 0.7768383, 33.082184, 1, -20.454456)
-
-[node name="ComputerFull24" parent="Rooms/RoomB/Computers" unique_id=691149197 instance=ExtResource("17_vvgy5")]
-transform = Transform3D(-0.6470694, 0, -0.7624311, 0, 1, 0, 0.7624311, 0, -0.6470694, 33.444088, 1, -19.908003)
-
 [node name="ComputerFull21" parent="Rooms/RoomB/Computers" unique_id=1259370608 instance=ExtResource("17_vvgy5")]
 transform = Transform3D(-0.76243114, 0, 0.6470695, 0, 1, 0, -0.6470695, 0, -0.76243114, 32.86949, 1, -15.606617)
-
-[node name="ComputerFull11" parent="Rooms/RoomB/Computers" unique_id=572711677 instance=ExtResource("17_vvgy5")]
-transform = Transform3D(0.76243126, 0, -0.6470694, 0, 1, 0, 0.6470694, 0, 0.76243126, 92.85495, 1, -42.56942)
-
-[node name="ComputerFull12" parent="Rooms/RoomB/Computers" unique_id=2109424724 instance=ExtResource("17_vvgy5")]
-transform = Transform3D(0.76243126, 0, -0.6470694, 0, 1, 0, 0.6470694, 0, 0.76243126, 92.85495, 1, -46.56942)
-
-[node name="ComputerFull13" parent="Rooms/RoomB/Computers" unique_id=481601107 instance=ExtResource("17_vvgy5")]
-transform = Transform3D(0.76243126, 0, -0.6470694, 0, 1, 0, 0.6470694, 0, 0.76243126, 92.85495, 1, -50.56942)
 
 [node name="CeilingCollider" type="StaticBody3D" parent="Rooms/RoomB" unique_id=1379122556]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 4, -22)
