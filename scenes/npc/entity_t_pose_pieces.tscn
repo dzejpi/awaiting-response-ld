@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://ciejryo10nhij"]
+
+[ext_resource type="PackedScene" uid="uid://d1prwvnbjcifr" path="res://assets/3d/entity/blend_export/monster_head_piece.gltf" id="1_ctnlv"]
+[ext_resource type="PackedScene" uid="uid://bkhq1bumkujlb" path="res://assets/3d/entity/blend_export/monster_left_hand_bottom_piece.gltf" id="2_nl3mk"]
+[ext_resource type="PackedScene" uid="uid://cel71j0e0kk8x" path="res://assets/3d/entity/blend_export/monster_left_hand_upper_piece.gltf" id="3_pvgul"]
+[ext_resource type="PackedScene" uid="uid://catkdapucx6fg" path="res://assets/3d/entity/blend_export/monster_left_leg_bottom_piece.gltf" id="4_3owtu"]
+[ext_resource type="PackedScene" uid="uid://dw33y2bk8ak4p" path="res://assets/3d/entity/blend_export/monster_left_leg_upper_piece.gltf" id="5_befr4"]
+[ext_resource type="PackedScene" uid="uid://ccipwsmrr0hso" path="res://assets/3d/entity/blend_export/monster_torso_piece.gltf" id="6_g4dnp"]
+
+[node name="Entity" type="Node3D" unique_id=265464587]
+
+[node name="monster_head_piece2" parent="." unique_id=255509262 instance=ExtResource("1_ctnlv")]
+transform = Transform3D(0.9996467, -0.026578235, 0, 0.026578235, 0.9996467, 0, 0, 0, 1, 0, 0.78228194, 0)
+
+[node name="monster_left_hand_bottom_piece2" parent="." unique_id=1630504790 instance=ExtResource("2_nl3mk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.71051705, -0.50346786)
+
+[node name="monster_left_hand_upper_piece2" parent="." unique_id=1102654225 instance=ExtResource("3_pvgul")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.710724, -0.14175208)
+
+[node name="monster_right_hand_bottom_piece3" parent="." unique_id=170023071 instance=ExtResource("2_nl3mk")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -1.58111e-08, 0.71051705, 0.5308293)
+
+[node name="monster_right_hand_upper_piece3" parent="." unique_id=132532498 instance=ExtResource("3_pvgul")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 1.5811098e-08, 0.710724, 0.16911352)
+
+[node name="monster_left_leg_bottom_piece2" parent="." unique_id=1664866327 instance=ExtResource("4_3owtu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.20464374, -0.055419832)
+
+[node name="monster_left_leg_upper_piece2" parent="." unique_id=346279674 instance=ExtResource("5_befr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.21218994, -0.045399874)
+
+[node name="monster_right_leg_bottom_piece3" parent="." unique_id=1813140346 instance=ExtResource("4_3owtu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.20464374, 0.06421614)
+
+[node name="monster_right_leg_upper_piece3" parent="." unique_id=1688673790 instance=ExtResource("5_befr4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.21218994, 0.074236095)
+
+[node name="monster_torso_piece2" parent="." unique_id=625720731 instance=ExtResource("6_g4dnp")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5123895, 0)

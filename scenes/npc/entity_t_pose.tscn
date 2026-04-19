@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://c71wyjvoyeyuw"]
+
+[ext_resource type="PackedScene" uid="uid://tkdhs6775ykr" path="res://assets/3d/entity/blend_export/monster_head.gltf" id="1_bsk41"]
+[ext_resource type="PackedScene" uid="uid://cwanlkl8h4jml" path="res://assets/3d/entity/blend_export/monster_left_hand_bottom.gltf" id="2_2s2hw"]
+[ext_resource type="PackedScene" uid="uid://cmmyvumk10nti" path="res://assets/3d/entity/blend_export/monster_left_hand_upper.gltf" id="3_qemy1"]
+[ext_resource type="PackedScene" uid="uid://bjvasahvawfee" path="res://assets/3d/entity/blend_export/monster_left_leg_bottom.gltf" id="4_qu2hb"]
+[ext_resource type="PackedScene" uid="uid://b15e4i7e43clk" path="res://assets/3d/entity/blend_export/monster_left_leg_upper.gltf" id="5_xtk2o"]
+[ext_resource type="PackedScene" uid="uid://bjym07bioqbs0" path="res://assets/3d/entity/blend_export/monster_left_right_bottom.gltf" id="6_rjdgw"]
+[ext_resource type="PackedScene" uid="uid://babnsvue1s3hk" path="res://assets/3d/entity/blend_export/monster_left_right_upper.gltf" id="7_iw012"]
+[ext_resource type="PackedScene" uid="uid://bvk4cd04vddoy" path="res://assets/3d/entity/blend_export/monster_right_hand_bottom.gltf" id="8_5w7ov"]
+[ext_resource type="PackedScene" uid="uid://yd0bk3u3i1cw" path="res://assets/3d/entity/blend_export/monster_right_hand_upper.gltf" id="9_ue4cm"]
+[ext_resource type="PackedScene" uid="uid://dwfc1ffdm52dt" path="res://assets/3d/entity/blend_export/monster_torso.gltf" id="10_k1kgs"]
+
+[node name="Entity" type="Node3D" unique_id=1753183170]
+
+[node name="monster_head2" parent="." unique_id=100784430 instance=ExtResource("1_bsk41")]
+
+[node name="monster_left_hand_bottom2" parent="." unique_id=11461011 instance=ExtResource("2_2s2hw")]
+
+[node name="monster_left_hand_upper2" parent="." unique_id=137705283 instance=ExtResource("3_qemy1")]
+
+[node name="monster_left_leg_bottom2" parent="." unique_id=815134886 instance=ExtResource("4_qu2hb")]
+
+[node name="monster_left_leg_upper2" parent="." unique_id=2140867837 instance=ExtResource("5_xtk2o")]
+
+[node name="monster_left_right_bottom2" parent="." unique_id=2105334610 instance=ExtResource("6_rjdgw")]
+
+[node name="monster_left_right_upper2" parent="." unique_id=1284047687 instance=ExtResource("7_iw012")]
+
+[node name="monster_right_hand_bottom2" parent="." unique_id=1776817197 instance=ExtResource("8_5w7ov")]
+
+[node name="monster_right_hand_upper2" parent="." unique_id=326731571 instance=ExtResource("9_ue4cm")]
+
+[node name="monster_torso2" parent="." unique_id=336353989 instance=ExtResource("10_k1kgs")]
