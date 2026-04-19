@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://cj3dopwdsfcto" path="res://scenes/rooms/signal_scene.tscn" id="2_n0ppv"]
 [ext_resource type="Script" uid="uid://bpbfhj6qgualt" path="res://scripts/rooms/objects/interactible.gd" id="2_xgaob"]
 [ext_resource type="Script" uid="uid://c2d8isb17tkn7" path="res://scripts/rooms/objects/object_manager_phone.gd" id="4_s1p6w"]
+[ext_resource type="AudioStream" uid="uid://rdh5eagbuxw4" path="res://assets/sfx/sfx_phone_ring.mp3" id="5_488vs"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_xgaob"]
 size = Vector3(1, 0.5, 1)
@@ -24,3 +25,9 @@ shape = SubResource("BoxShape3D_xgaob")
 
 [node name="ObjectManager" type="Node3D" parent="." index="3" unique_id=1194863478]
 script = ExtResource("4_s1p6w")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="4" unique_id=553278910]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2004256, 0)
+stream = ExtResource("5_488vs")
+volume_db = -15.0
+autoplay = true
