@@ -43,6 +43,9 @@ var last_looked_at: String = ""
 var current_signal_amount: float = 0.0
 var current_signal_receiving: float = 0.0
 
+# Targets
+var current_signal_amount_target: float = 0.0
+var current_signal_receiving_target: float = 0.0
 
 func _ready() -> void:
 	GlobalVar.reset_game()
@@ -64,6 +67,9 @@ func _process(delta: float) -> void:
 	
 	check_signal_amount()
 	adjust_shader()
+	
+	# Smooth signal interpolation
+	adjust_signals(delta)
 
 
 func _physics_process(delta: float) -> void:
@@ -170,13 +176,13 @@ func warp_backwards() -> void:
 
 
 func increase_signal_amount(increased_amount: float) -> void:
-	current_signal_amount += increased_amount
-	print("Signal increased to: " + str(current_signal_amount))
+	current_signal_amount_target += current_signal_amount + increased_amount
+	#print("Signal increased to: " + str(current_signal_amount))
 
 
 func change_receiving_signal_amount(increased_amount: float) -> void:
-	current_signal_receiving = increased_amount
-	print("Signal reception increased to: " + str(current_signal_receiving))
+	current_signal_receiving_target = increased_amount
+	#print("Signal reception changed to: " + str(current_signal_receiving))
 
 
 func check_signal_amount() -> void:
@@ -190,3 +196,10 @@ func adjust_shader() -> void:
 	color_rect.material.set_shader_parameter("signal_strength", signal_normalised)
 	color_rect_signal.material.set_shader_parameter("signal_strength", received_signal_normalised)
 	
+
+func adjust_signals(delta: float) -> void:
+	var adjustment_speed = 2
+	
+	current_signal_amount = lerp(current_signal_amount, current_signal_amount_target, adjustment_speed * delta)
+	current_signal_receiving = lerp(current_signal_receiving, current_signal_receiving_target, adjustment_speed * delta)
+	#print("Signal amount: " + str(current_signal_amount) + ", signal receiving: " + str(current_signal_receiving))
