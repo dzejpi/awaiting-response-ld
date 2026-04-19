@@ -1,13 +1,17 @@
 [gd_scene format=3 uid="uid://cqbrt2mbh4q4p"]
 
 [ext_resource type="PackedScene" uid="uid://dhmewhqi2y474" path="res://scenes/rooms/objects/computer.tscn" id="1_ao1jq"]
-[ext_resource type="Script" uid="uid://1x3rwoa3h0a8" path="res://scripts/rooms/objects/computer_full.gd" id="1_sxkdv"]
+[ext_resource type="Script" uid="uid://bpbfhj6qgualt" path="res://scripts/rooms/objects/interactible.gd" id="1_sy4ry"]
 [ext_resource type="PackedScene" uid="uid://brc8corp6m87y" path="res://scenes/rooms/objects/computer_bottom.tscn" id="2_sxkdv"]
 [ext_resource type="PackedScene" uid="uid://c3q1i4mgrid8t" path="res://scenes/rooms/objects/computer_keyboard.tscn" id="3_sy4ry"]
 [ext_resource type="PackedScene" uid="uid://cj3dopwdsfcto" path="res://scenes/rooms/signal_scene.tscn" id="5_sy4ry"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_6te8e"]
+size = Vector3(0.5, 0.60339355, 0.67041016)
+
 [node name="ComputerFull" type="Node3D" unique_id=1995581265]
-script = ExtResource("1_sxkdv")
+script = ExtResource("1_sy4ry")
+tooltip = "Press E to restart"
 
 [node name="Computer" parent="." unique_id=1170265618 instance=ExtResource("1_ao1jq")]
 
@@ -17,3 +21,10 @@ script = ExtResource("1_sxkdv")
 
 [node name="SignalScene" parent="." unique_id=1797278511 instance=ExtResource("5_sy4ry")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24618393, 0, -0.5961252)
+
+[node name="InteractiveObject" type="StaticBody3D" parent="." unique_id=395780068]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.23365587, 0.39445734, -0.42747855)
+
+[node name="InteractiveObjectCollider" type="CollisionShape3D" parent="InteractiveObject" unique_id=1614211598]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.087982565, -0.08520508)
+shape = SubResource("BoxShape3D_6te8e")

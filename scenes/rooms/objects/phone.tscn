@@ -2,8 +2,21 @@
 
 [ext_resource type="PackedScene" uid="uid://bj0yihmsgoofe" path="res://assets/3d/objects/blend_export/obj_phone.gltf" id="1_hnx3s"]
 [ext_resource type="PackedScene" uid="uid://cj3dopwdsfcto" path="res://scenes/rooms/signal_scene.tscn" id="2_n0ppv"]
+[ext_resource type="Script" uid="uid://bpbfhj6qgualt" path="res://scripts/rooms/objects/interactible.gd" id="2_xgaob"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xgaob"]
+size = Vector3(1, 0.5, 1)
 
 [node name="Phone" unique_id=1823915594 instance=ExtResource("1_hnx3s")]
+script = ExtResource("2_xgaob")
+hurt_amount = 30
+tooltip = "Press E to answer"
 
 [node name="SignalScene" parent="." index="1" unique_id=1797278511 instance=ExtResource("2_n0ppv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="InteractiveObject" type="StaticBody3D" parent="." index="2" unique_id=1466486832]
+
+[node name="InteractiveObjectCollider" type="CollisionShape3D" parent="InteractiveObject" index="0" unique_id=463631465]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2402344, 0)
+shape = SubResource("BoxShape3D_xgaob")

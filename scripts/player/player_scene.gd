@@ -138,11 +138,25 @@ func process_collisions() -> void:
 		var collision_object: String = ray_cast.get_collider().name
 		if collision_object != last_looked_at:
 			last_looked_at = collision_object
+			
+			if collision_object == "InteractiveObject":
+				var object = ray_cast.get_collider()
+				var new_tooltip: String = object.get_parent().get_tooltip()
+				player_tooltip.display_tooltip(new_tooltip, false)
+				
+				if Input.is_action_just_pressed("object_interact"):
+					pass
+				
+			else:
+				player_tooltip.dismiss_tooltip()
+			
 			if debug:
 				print("Player is looking at: " + collision_object + ".")
 	else:
 		if last_looked_at != "nothing":
 			last_looked_at = "nothing"
+			player_tooltip.dismiss_tooltip()
+			
 			if debug:
 				print("Player is looking at: nothing.")
 
