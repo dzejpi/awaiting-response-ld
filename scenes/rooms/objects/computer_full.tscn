@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cqbrt2mbh4q4p"]
+
+[ext_resource type="PackedScene" uid="uid://dhmewhqi2y474" path="res://scenes/rooms/objects/computer.tscn" id="1_ao1jq"]
+[ext_resource type="Script" uid="uid://1x3rwoa3h0a8" path="res://scripts/rooms/objects/computer_full.gd" id="1_sxkdv"]
+[ext_resource type="PackedScene" uid="uid://brc8corp6m87y" path="res://scenes/rooms/objects/computer_bottom.tscn" id="2_sxkdv"]
+[ext_resource type="PackedScene" uid="uid://c3q1i4mgrid8t" path="res://scenes/rooms/objects/computer_keyboard.tscn" id="3_sy4ry"]
+
+[node name="ComputerFull" type="Node3D" unique_id=1995581265]
+script = ExtResource("1_sxkdv")
+
+[node name="Computer" parent="." unique_id=1170265618 instance=ExtResource("1_ao1jq")]
+
+[node name="ComputerBottom" parent="." unique_id=1067920635 instance=ExtResource("2_sxkdv")]
+
+[node name="ComputerKeyboard" parent="." unique_id=1534944856 instance=ExtResource("3_sy4ry")]

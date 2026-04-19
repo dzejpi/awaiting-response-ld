@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://c3q1i4mgrid8t"]
+
+[ext_resource type="PackedScene" uid="uid://dlsx2iuelht2h" path="res://assets/3d/objects/blend_export/obj_computer_keyboard.gltf" id="1_b1n16"]
+
+[node name="ComputerKeyboard" unique_id=1534944856 instance=ExtResource("1_b1n16")]

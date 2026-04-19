@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://brc8corp6m87y"]
+
+[ext_resource type="PackedScene" uid="uid://b1v6iqsmg8mrw" path="res://assets/3d/objects/blend_export/obj_computer_bottom.gltf" id="1_kj16x"]
+
+[node name="ComputerBottom" unique_id=1067920635 instance=ExtResource("1_kj16x")]
