@@ -51,5 +51,6 @@ spot_range = 2.0
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." unique_id=1362699400]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.27118146, 0.19520599, -0.25285912)
 stream = ExtResource("8_744ce")
-volume_db = -30.0
+volume_db = -10.0
+unit_size = 2.0
 autoplay = true
