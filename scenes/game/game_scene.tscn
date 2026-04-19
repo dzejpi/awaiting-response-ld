@@ -4175,6 +4175,10 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -16.
 [node name="DoorA8" parent="Rooms/Doors" unique_id=50938721 instance=ExtResource("62_75yty")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.93322, -4, 41.994377)
 
+[node name="DoorA9" parent="Rooms/Doors" unique_id=1431864302 instance=ExtResource("62_75yty")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 20.075468, -4, 50.994377)
+is_force_shut = true
+
 [node name="Interactive" type="Node3D" parent="." unique_id=2140001250]
 
 [node name="WarpArea" type="Area3D" parent="Interactive" unique_id=152358238]
@@ -4195,7 +4199,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, -2, 46)
 script = ExtResource("48_mnts0")
 
 [node name="FinalAreaShape" type="CollisionShape3D" parent="Interactive/FinalArea" unique_id=1248724332]
-transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, 0, 0, 0)
+transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, 3, 0, 3)
 shape = SubResource("BoxShape3D_slyvx")
 
 [node name="Signals" type="Node3D" parent="Interactive" unique_id=1566991691]
