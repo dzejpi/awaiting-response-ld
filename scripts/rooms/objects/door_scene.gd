@@ -31,8 +31,10 @@ func close_doors() -> void:
 
 
 func _on_open_trigger_body_entered(body: Node3D) -> void:
-	open_doors()
+	if body.name == "PlayerScene":
+		open_doors()
 
 
 func _on_close_trigger_body_entered(body: Node3D) -> void:
-	close_doors()
+	if body.name == "PlayerScene":
+		close_doors()

@@ -65,6 +65,7 @@
 [ext_resource type="PackedScene" uid="uid://dk6ot6cogeicr" path="res://scenes/objects/sun.tscn" id="56_xb5ko"]
 [ext_resource type="PackedScene" uid="uid://bocfdeiglp1q4" path="res://scenes/objects/wall_sign_empty.tscn" id="59_58a27"]
 [ext_resource type="PackedScene" uid="uid://x78cbukyltpu" path="res://scenes/rooms/objects/door_a.tscn" id="62_75yty"]
+[ext_resource type="PackedScene" uid="uid://c62q7bdymhxdp" path="res://scenes/rooms/objects/door_b.tscn" id="63_dgv3i"]
 [ext_resource type="PackedScene" uid="uid://h112eo27xlwv" path="res://scenes/objects/red_button.tscn" id="63_fdbjj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_psv6s"]
@@ -92,7 +93,6 @@ size = Vector3(22, 4, 4)
 script = ExtResource("1_5lbu1")
 
 [node name="PlayerScene" parent="." unique_id=1842138678 instance=ExtResource("2_3l0ia")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -85, 0, 0)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=474206427]
 environment = SubResource("Environment_7nmuq")
@@ -4173,12 +4173,18 @@ transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 24.1
 [node name="DoorA7" parent="Rooms/Doors" unique_id=1455604617 instance=ExtResource("62_75yty")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -16.095177, 0, -99.00562)
 
+[node name="DoorA10" parent="Rooms/Doors" unique_id=624500587 instance=ExtResource("62_75yty")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -61.998554, -4, -52.10407)
+
 [node name="DoorA8" parent="Rooms/Doors" unique_id=50938721 instance=ExtResource("62_75yty")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.93322, -4, 41.994377)
 
 [node name="DoorA9" parent="Rooms/Doors" unique_id=1431864302 instance=ExtResource("62_75yty")]
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 20.075468, -4, 50.994377)
 is_force_shut = true
+
+[node name="DoorB" parent="Rooms/Doors" unique_id=2126254443 instance=ExtResource("63_dgv3i")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -107.00534, -4.010601, 28.012953)
 
 [node name="Interactive" type="Node3D" parent="." unique_id=2140001250]
 

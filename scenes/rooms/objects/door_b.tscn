@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://c62q7bdymhxdp"]
+
+[ext_resource type="PackedScene" uid="uid://brxkl1lc7en21" path="res://assets/3d/objects/blend_export/obj_door_b_col.gltf" id="1_e2qaf"]
+[ext_resource type="Script" uid="uid://bixfchxm216tp" path="res://scripts/rooms/objects/door_b.gd" id="2_07dq6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_07dq6"]
+size = Vector3(3, 1, 1)
+
+[sub_resource type="Animation" id="Animation_s0x3s"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("obj_door_b:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_xv0jb"]
+resource_name = "door_open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("obj_door_b:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.97),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -1.5707964, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_udcoo"]
+_data = {
+&"RESET": SubResource("Animation_s0x3s"),
+&"door_open": SubResource("Animation_xv0jb")
+}
+
+[node name="DoorB" unique_id=2126254443 instance=ExtResource("1_e2qaf")]
+script = ExtResource("2_07dq6")
+
+[node name="OpenTrigger" type="Area3D" parent="." index="1" unique_id=1305076953]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.496894, 0, 0.9618975)
+
+[node name="OpenCollision" type="CollisionShape3D" parent="OpenTrigger" index="0" unique_id=1867124425]
+shape = SubResource("BoxShape3D_07dq6")
+
+[node name="DoorAnimationPlayer" type="AnimationPlayer" parent="." index="2" unique_id=1701099843]
+libraries/ = SubResource("AnimationLibrary_udcoo")
+
+[connection signal="body_entered" from="OpenTrigger" to="." method="_on_open_trigger_body_entered"]
