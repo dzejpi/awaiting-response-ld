@@ -67,6 +67,7 @@ _data = {
 script = ExtResource("2_ri28j")
 
 [node name="DoorAudioPlayer" type="AudioStreamPlayer3D" parent="." index="1" unique_id=883521828]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="DoorFrameA" parent="." index="2" unique_id=1376317643 instance=ExtResource("3_ri28j")]
 

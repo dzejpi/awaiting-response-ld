@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://brxkl1lc7en21" path="res://assets/3d/objects/blend_export/obj_door_b_col.gltf" id="1_e2qaf"]
 [ext_resource type="Script" uid="uid://bixfchxm216tp" path="res://scripts/rooms/objects/door_b.gd" id="2_07dq6"]
+[ext_resource type="AudioStream" uid="uid://bph0w345451n2" path="res://assets/sfx/sfx_doors_open.mp3" id="3_s0x3s"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_07dq6"]
 size = Vector3(3, 1, 1)
@@ -53,5 +54,8 @@ shape = SubResource("BoxShape3D_07dq6")
 
 [node name="DoorAnimationPlayer" type="AnimationPlayer" parent="." index="2" unique_id=1701099843]
 libraries/ = SubResource("AnimationLibrary_udcoo")
+
+[node name="DoorAudioPlayer" type="AudioStreamPlayer3D" parent="." index="3" unique_id=775251291]
+stream = ExtResource("3_s0x3s")
 
 [connection signal="body_entered" from="OpenTrigger" to="." method="_on_open_trigger_body_entered"]
