@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://lidxun3v1u3h" path="res://scenes/game_ui/game_over_scene.tscn" id="2_n2ncv"]
 [ext_resource type="PackedScene" uid="uid://8rjjgn7r2g22" path="res://scenes/game_ui/game_pause_scene.tscn" id="2_s8mh6"]
 [ext_resource type="Shader" uid="uid://csw3ril8tlnac" path="res://shaders/player_shader.gdshader" id="2_wh6ij"]
+[ext_resource type="AudioStream" uid="uid://dijwrqwdrwlok" path="res://assets/sfx/sfx_negative_hit.wav" id="3_hv0pn"]
 [ext_resource type="PackedScene" uid="uid://cpoy7p032mikq" path="res://scenes/game_ui/game_won_scene.tscn" id="3_ilfnc"]
 [ext_resource type="PackedScene" uid="uid://d0k77qlot24nc" path="res://scenes/game_ui/typewriter_dialog_scene.tscn" id="4_x0qso"]
 [ext_resource type="PackedScene" uid="uid://uqsnfk54cjss" path="res://scenes/game_ui/player_tooltip.tscn" id="6_km5q6"]
@@ -47,6 +48,10 @@ material = SubResource("ShaderMaterial_wh6ij")
 offset_right = 1280.0
 offset_bottom = 720.0
 mouse_filter = 2
+
+[node name="AudioNegativeFeedback" type="AudioStreamPlayer3D" parent="PlayerHead" unique_id=1038420930]
+stream = ExtResource("3_hv0pn")
+volume_db = -15.0
 
 [node name="BodyCollisionShape" type="CollisionShape3D" parent="." unique_id=1982151978]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)

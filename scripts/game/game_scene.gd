@@ -18,7 +18,6 @@ var current_child_count_countdown: float = child_count_countdown
 @onready var player_scene: CharacterBody3D = $PlayerScene
 @onready var world_environment: WorldEnvironment = $WorldEnvironment
 
-
 var is_game_over: bool = false
 
 

@@ -16,6 +16,7 @@ const JUMP_VELOCITY: float = 4.5
 @onready var color_rect: ColorRect = $PlayerHead/Camera/CanvasLayer/ColorRect
 @onready var color_rect_signal: ColorRect = $PlayerUI/GameUI/ColorRect
 @onready var noise_player: AudioStreamPlayer2D = $NoisePlayer
+@onready var audio_negative_feedback: AudioStreamPlayer3D = $PlayerHead/AudioNegativeFeedback
 
 
 @export var is_fov_dynamic: bool = true
@@ -205,6 +206,7 @@ func warp_backwards() -> void:
 
 func increase_signal_amount(increased_amount: float) -> void:
 	current_signal_amount_target += increased_amount
+	audio_negative_feedback.play()
 	#print("Signal increased to: " + str(current_signal_amount))
 
 
