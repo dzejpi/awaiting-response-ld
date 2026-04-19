@@ -63,6 +63,9 @@ var current_signal_amount_target: float = 0.0
 var current_signal_receiving_target: float = 0.0
 
 var is_controllable: bool = true
+var player_not_hurt_yet: bool = true
+var player_over_fifty: bool = false
+var player_over_three_quarters: bool = false
 
 
 func _ready() -> void:
@@ -170,6 +173,10 @@ func process_collisions() -> void:
 					increase_signal_amount(damage_amount)
 					change_receiving_signal_amount(0.0)
 					player_tooltip.dismiss_tooltip()
+					
+					if player_not_hurt_yet:
+						player_not_hurt_yet = false
+						play_voice_message(2)
 		
 		if collision_object != last_looked_at:
 			last_looked_at = collision_object
@@ -228,6 +235,17 @@ func warp_backwards() -> void:
 func increase_signal_amount(increased_amount: float) -> void:
 	current_signal_amount_target += increased_amount
 	audio_negative_feedback.play()
+	
+	if !player_over_fifty:
+		if current_signal_amount_target >= 50.0:
+			player_over_fifty = true
+			play_voice_message(6)
+	
+	if !player_over_three_quarters:
+		if current_signal_amount_target >= 75.0:
+			player_over_three_quarters = true
+			play_voice_message(2)
+	
 	#print("Signal increased to: " + str(current_signal_amount))
 
 
@@ -276,7 +294,7 @@ func play_voice_message(message: int) -> void:
 			player_tooltip.display_voice_tooltip("I... see... you...", 5.0)
 		2:
 			audio_behind_player.stream = SFX_VOICE_KEEP_GOING
-			player_tooltip.display_voice_tooltip("Well done, keep going.", 5.0)
+			player_tooltip.display_voice_tooltip("Well done, keep going.", 3.0)
 		3:
 			audio_behind_player.stream = SFX_VOICE_LONG_WALK
 			player_tooltip.display_voice_tooltip("It's a long walk... try running.", 5.0)
@@ -288,6 +306,6 @@ func play_voice_message(message: int) -> void:
 			player_tooltip.display_voice_tooltip("Turn around.", 5.0)
 		6:
 			audio_behind_player.stream = SFX_VOICE_WELL_DONE
-			player_tooltip.display_voice_tooltip("Well done.", 5.0)
+			player_tooltip.display_voice_tooltip("Well done.", 2.0)
 	
 	audio_behind_player.play()
