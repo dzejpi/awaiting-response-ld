@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://da2vanyogeavs"
-path="res://.godot/imported/ludum_dare_cover.png-c0278afb5f47f36317aded227d6ce8dc.ctex"
+uid="uid://c7ytlgwsjx05k"
+path="res://.godot/imported/ludum_dare_original.png-cc3c868c85234b758e77dc3cf8cef827.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/external/ludum_dare_cover.png"
-dest_files=["res://.godot/imported/ludum_dare_cover.png-c0278afb5f47f36317aded227d6ce8dc.ctex"]
+source_file="res://assets/external/ludum_dare_original.png"
+dest_files=["res://.godot/imported/ludum_dare_original.png-cc3c868c85234b758e77dc3cf8cef827.ctex"]
 
 [params]
 
