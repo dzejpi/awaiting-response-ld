@@ -12,11 +12,11 @@ void fragment() {
 
     // --- Wave shape ---
 	float scroll = TIME * 0.3;
-    float wave = sin((uv.x + scroll) * 6.2831 * 4.0) * 0.3;
-    wave += sin((uv.x + scroll) * 6.2831 * 9.3) * 0.2;
-    wave += sin((uv.x + scroll) * 6.2831 * 17.7) * 0.1;
-    wave += sin((uv.x + scroll) * 6.2831 * 31.1) * 0.06;
-    wave += fract(sin((uv.x + scroll) * 127.1) * 43758.5453) * 0.15 - 0.075;
+    float wave = sin((uv.x + scroll) * 6.0 * 4.0) * 0.3;
+    wave += sin((uv.x + scroll) * 6.0 * 8.0) * 0.2;
+    wave += sin((uv.x + scroll) * 6.0 * 16.0) * 0.1;
+    wave += sin((uv.x + scroll) * 6.0 * 32.0) * 0.05;
+    wave += fract(sin((uv.x + scroll) * 127.1) * 32768.0) * 0.15 - 0.075;
 
     // --- Pulse amplitude up and down over time ---
     float pulse = sin(TIME * pulse_speed) * 0.9;
