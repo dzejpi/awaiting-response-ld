@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://bpbfhj6qgualt" path="res://scripts/rooms/objects/interactible.gd" id="2_2plpg"]
 [ext_resource type="PackedScene" uid="uid://cj3dopwdsfcto" path="res://scenes/rooms/signal_scene.tscn" id="2_it0e2"]
 [ext_resource type="Script" uid="uid://bg7o5occ4035u" path="res://scripts/rooms/objects/object_manager_button.gd" id="4_7bhjh"]
+[ext_resource type="AudioStream" uid="uid://dmuor77ro5j5q" path="res://assets/sfx/sfx_button_press.mp3" id="5_xejyb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_2plpg"]
 size = Vector3(0.5, 0.2, 0.5)
@@ -23,3 +24,6 @@ shape = SubResource("BoxShape3D_2plpg")
 
 [node name="ObjectManager" type="Node3D" parent="." index="3" unique_id=1823477688]
 script = ExtResource("4_7bhjh")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="4" unique_id=1423208923]
+stream = ExtResource("5_xejyb")
