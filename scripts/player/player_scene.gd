@@ -14,6 +14,7 @@ const JUMP_VELOCITY: float = 4.5
 @onready var game_over_scene: Node2D = $PlayerUI/GameEnd/GameOverScene
 @onready var game_won_scene: Node2D = $PlayerUI/GameEnd/GameWonScene
 @onready var color_rect: ColorRect = $PlayerHead/Camera/CanvasLayer/ColorRect
+@onready var color_rect_signal: ColorRect = $PlayerUI/GameUI/ColorRect
 
 
 @export var is_fov_dynamic: bool = true
@@ -180,3 +181,5 @@ func check_signal_amount() -> void:
 func adjust_shader() -> void:
 	var signal_normalised = clamp(current_signal_amount / 100.0, 0.0, 1.0)
 	color_rect.material.set_shader_parameter("signal_strength", signal_normalised)
+	color_rect_signal.material.set_shader_parameter("signal_strength", signal_normalised)
+	
