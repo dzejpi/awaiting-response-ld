@@ -64,6 +64,7 @@
 [ext_resource type="PackedScene" uid="uid://cj3dopwdsfcto" path="res://scenes/rooms/signal_scene.tscn" id="56_ismpi"]
 [ext_resource type="PackedScene" uid="uid://dk6ot6cogeicr" path="res://scenes/objects/sun.tscn" id="56_xb5ko"]
 [ext_resource type="PackedScene" uid="uid://bocfdeiglp1q4" path="res://scenes/objects/wall_sign_empty.tscn" id="59_58a27"]
+[ext_resource type="PackedScene" uid="uid://x78cbukyltpu" path="res://scenes/rooms/objects/door_a.tscn" id="62_75yty"]
 [ext_resource type="PackedScene" uid="uid://h112eo27xlwv" path="res://scenes/objects/red_button.tscn" id="63_fdbjj"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_psv6s"]
@@ -4135,6 +4136,33 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -103, 7, 24)
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -12, 2, -24)
 sign_text = "Press the
 button."
+
+[node name="Doors" type="Node3D" parent="Rooms" unique_id=1688641921]
+
+[node name="DoorA" parent="Rooms/Doors" unique_id=1824497086 instance=ExtResource("62_75yty")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4.11279)
+is_force_shut = true
+
+[node name="DoorA2" parent="Rooms/Doors" unique_id=428923143 instance=ExtResource("62_75yty")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 19.903597, 0, -24.002947)
+
+[node name="DoorA3" parent="Rooms/Doors" unique_id=2075191959 instance=ExtResource("62_75yty")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 27.903597, 0, -24.002947)
+
+[node name="DoorA4" parent="Rooms/Doors" unique_id=1072220966 instance=ExtResource("62_75yty")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 92.903595, 0, -60.002945)
+
+[node name="DoorA5" parent="Rooms/Doors" unique_id=1801310415 instance=ExtResource("62_75yty")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.903595, 0, -67.89327)
+
+[node name="DoorA6" parent="Rooms/Doors" unique_id=1187516245 instance=ExtResource("62_75yty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 24.142977, 0, -72.017715)
+
+[node name="DoorA7" parent="Rooms/Doors" unique_id=1455604617 instance=ExtResource("62_75yty")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -16.095177, 0, -99.00562)
+
+[node name="DoorA8" parent="Rooms/Doors" unique_id=50938721 instance=ExtResource("62_75yty")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 3.93322, -4, 41.994377)
 
 [node name="Interactive" type="Node3D" parent="." unique_id=2140001250]
 

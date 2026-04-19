@@ -4,9 +4,86 @@
 [ext_resource type="Script" uid="uid://bnkmiqlne5uxo" path="res://scripts/rooms/objects/door_scene.gd" id="2_ri28j"]
 [ext_resource type="PackedScene" uid="uid://cjukh6ntappbc" path="res://scenes/rooms/objects/door_frame_a.tscn" id="3_ri28j"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_ri28j"]
+size = Vector3(4, 2, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_l3era"]
+size = Vector3(4, 2, 1)
+
+[sub_resource type="Animation" id="Animation_ri28j"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("obj_door_a:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_wruwl"]
+resource_name = "close_doors"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("obj_door_a:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.23333335),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, -1.5707964, 0), Vector3(0, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_l3era"]
+resource_name = "open_door"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("obj_door_a:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, -1.5707964, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_wruwl"]
+_data = {
+&"RESET": SubResource("Animation_ri28j"),
+&"close_doors": SubResource("Animation_wruwl"),
+&"open_door": SubResource("Animation_l3era")
+}
+
 [node name="DoorA" unique_id=1824497086 instance=ExtResource("1_tgte4")]
 script = ExtResource("2_ri28j")
 
 [node name="DoorAudioPlayer" type="AudioStreamPlayer3D" parent="." index="1" unique_id=883521828]
 
 [node name="DoorFrameA" parent="." index="2" unique_id=1376317643 instance=ExtResource("3_ri28j")]
+
+[node name="OpenTrigger" type="Area3D" parent="." index="3" unique_id=1236858687]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, -1, 1, 1)
+
+[node name="OpenCollision" type="CollisionShape3D" parent="OpenTrigger" index="0" unique_id=458464269]
+shape = SubResource("BoxShape3D_ri28j")
+
+[node name="CloseTrigger" type="Area3D" parent="." index="4" unique_id=210586600]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 1, -1.6444688)
+
+[node name="CloseCollision" type="CollisionShape3D" parent="CloseTrigger" index="0" unique_id=533697184]
+shape = SubResource("BoxShape3D_l3era")
+
+[node name="DoorAnimationPlayer" type="AnimationPlayer" parent="." index="5" unique_id=508204952]
+libraries/ = SubResource("AnimationLibrary_wruwl")
+
+[connection signal="body_entered" from="OpenTrigger" to="." method="_on_open_trigger_body_entered"]
+[connection signal="body_entered" from="CloseTrigger" to="." method="_on_close_trigger_body_entered"]
