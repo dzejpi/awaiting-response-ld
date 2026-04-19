@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://cj3dopwdsfcto"]
+
+[ext_resource type="Script" uid="uid://bfyn8bb7me4lq" path="res://scripts/rooms/signal_scene.gd" id="1_wde7h"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_wde7h"]
+radius = 3.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_in4tq"]
+radius = 2.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_i0pgo"]
+radius = 1.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_rutwb"]
+radius = 0.75
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_l6ite"]
+
+[node name="SignalScene" type="Node3D" unique_id=1797278511]
+script = ExtResource("1_wde7h")
+
+[node name="Signal10" type="Area3D" parent="." unique_id=1170673071]
+
+[node name="Collision10" type="CollisionShape3D" parent="Signal10" unique_id=1265075946]
+shape = SubResource("SphereShape3D_wde7h")
+
+[node name="Signal25" type="Area3D" parent="." unique_id=91534504]
+
+[node name="Collision25" type="CollisionShape3D" parent="Signal25" unique_id=1706505138]
+shape = SubResource("SphereShape3D_in4tq")
+
+[node name="Signal50" type="Area3D" parent="." unique_id=1394595207]
+
+[node name="Collision50" type="CollisionShape3D" parent="Signal50" unique_id=1577128757]
+shape = SubResource("SphereShape3D_i0pgo")
+
+[node name="Signal75" type="Area3D" parent="." unique_id=428503424]
+
+[node name="Collision75" type="CollisionShape3D" parent="Signal75" unique_id=1209554932]
+shape = SubResource("SphereShape3D_rutwb")
+
+[node name="Signal100" type="Area3D" parent="." unique_id=1103293758]
+
+[node name="Collision100" type="CollisionShape3D" parent="Signal100" unique_id=212925642]
+shape = SubResource("SphereShape3D_l6ite")
+
+[connection signal="body_entered" from="Signal10" to="." method="_on_signal_10_body_entered"]
+[connection signal="body_exited" from="Signal10" to="." method="_on_signal_10_body_exited"]
+[connection signal="body_entered" from="Signal25" to="." method="_on_signal_25_body_entered"]
+[connection signal="body_exited" from="Signal25" to="." method="_on_signal_25_body_exited"]
+[connection signal="body_entered" from="Signal50" to="." method="_on_signal_50_body_entered"]
+[connection signal="body_exited" from="Signal50" to="." method="_on_signal_50_body_exited"]
+[connection signal="body_entered" from="Signal75" to="." method="_on_signal_75_body_entered"]
+[connection signal="body_exited" from="Signal75" to="." method="_on_signal_75_body_exited"]
+[connection signal="body_entered" from="Signal100" to="." method="_on_signal_100_body_entered"]
+[connection signal="body_exited" from="Signal100" to="." method="_on_signal_100_body_exited"]

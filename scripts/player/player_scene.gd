@@ -41,6 +41,7 @@ var debug: bool = true
 var last_looked_at: String = ""
 
 var current_signal_amount: float = 0.0
+var current_signal_receiving: float = 0.0
 
 
 func _ready() -> void:
@@ -173,6 +174,11 @@ func increase_signal_amount(increased_amount: float) -> void:
 	print("Signal increased to: " + str(current_signal_amount))
 
 
+func change_receiving_signal_amount(increased_amount: float) -> void:
+	current_signal_receiving = increased_amount
+	print("Signal reception increased to: " + str(current_signal_receiving))
+
+
 func check_signal_amount() -> void:
 	if current_signal_amount >= 100:
 		trigger_game_over()
@@ -180,6 +186,7 @@ func check_signal_amount() -> void:
 
 func adjust_shader() -> void:
 	var signal_normalised = clamp(current_signal_amount / 100.0, 0.0, 1.0)
+	var received_signal_normalised = clamp(current_signal_receiving / 100.0, 0.0, 1.0)
 	color_rect.material.set_shader_parameter("signal_strength", signal_normalised)
-	color_rect_signal.material.set_shader_parameter("signal_strength", signal_normalised)
+	color_rect_signal.material.set_shader_parameter("signal_strength", received_signal_normalised)
 	

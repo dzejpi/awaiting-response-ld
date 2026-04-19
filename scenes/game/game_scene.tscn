@@ -55,6 +55,7 @@
 [ext_resource type="PackedScene" uid="uid://cydkd4h04dvea" path="res://scenes/rooms/ceiling/ceiling_g_1.tscn" id="42_742nn"]
 [ext_resource type="Script" uid="uid://cb6i0exon7d4" path="res://scripts/game/warp_area.gd" id="46_bj7ya"]
 [ext_resource type="Script" uid="uid://bf1j6vf0drpam" path="res://scripts/game/final_area.gd" id="48_mnts0"]
+[ext_resource type="PackedScene" uid="uid://cj3dopwdsfcto" path="res://scenes/rooms/signal_scene.tscn" id="56_ismpi"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_psv6s"]
 
@@ -3724,6 +3725,11 @@ script = ExtResource("48_mnts0")
 [node name="FinalAreaShape" type="CollisionShape3D" parent="Interactive/FinalArea" unique_id=1248724332]
 transform = Transform3D(0.70710677, 0, 0.70710677, 0, 1, 0, -0.70710677, 0, 0.70710677, 0, 0, 0)
 shape = SubResource("BoxShape3D_slyvx")
+
+[node name="Signals" type="Node3D" parent="Interactive" unique_id=1566991691]
+
+[node name="SignalScene" parent="Interactive/Signals" unique_id=1797278511 instance=ExtResource("56_ismpi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11)
 
 [connection signal="body_entered" from="Interactive/WarpArea" to="Interactive/WarpArea" method="_on_body_entered"]
 [connection signal="body_entered" from="Interactive/FinalArea" to="Interactive/FinalArea" method="_on_body_entered"]
