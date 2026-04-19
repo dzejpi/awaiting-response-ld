@@ -291,19 +291,19 @@ func play_voice_message(message: int) -> void:
 	match(message):
 		1:
 			audio_behind_player.stream = SFX_VOICE_I_SEE_YOU
-			player_tooltip.display_voice_tooltip("I... see... you...", 5.0)
+			player_tooltip.display_voice_tooltip("I... see... you...", 2.5)
 		2:
 			audio_behind_player.stream = SFX_VOICE_KEEP_GOING
 			player_tooltip.display_voice_tooltip("Well done, keep going.", 3.0)
 		3:
 			audio_behind_player.stream = SFX_VOICE_LONG_WALK
-			player_tooltip.display_voice_tooltip("It's a long walk... try running.", 5.0)
+			player_tooltip.display_voice_tooltip("It's a long walk... try running.", 3.0)
 		4:
 			audio_behind_player.stream = SFX_VOICE_RIGHT_CHOICE
 			player_tooltip.display_voice_tooltip("That's impressive... most of the people stop by now.", 5.0)
 		5:
 			audio_behind_player.stream = SFX_VOICE_TURN_AROUND
-			player_tooltip.display_voice_tooltip("Turn around.", 5.0)
+			player_tooltip.display_voice_tooltip("Turn around.", 2.0)
 		6:
 			audio_behind_player.stream = SFX_VOICE_WELL_DONE
 			player_tooltip.display_voice_tooltip("Well done.", 2.0)
