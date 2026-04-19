@@ -50,6 +50,7 @@
 [ext_resource type="PackedScene" uid="uid://dvv01y4q1nesu" path="res://scenes/rooms/ceiling/ceiling_e_1.tscn" id="35_nji50"]
 [ext_resource type="PackedScene" uid="uid://do5g2mgc1xkd7" path="res://scenes/rooms/ceiling/ceiling_f_1.tscn" id="36_55da6"]
 [ext_resource type="PackedScene" uid="uid://bohyl0dlb5tnm" path="res://scenes/rooms/ground/ground_g_1.tscn" id="36_dlpq4"]
+[ext_resource type="PackedScene" uid="uid://bukyo15gp3qip" path="res://scenes/objects/drain.tscn" id="37_aqqoi"]
 [ext_resource type="PackedScene" uid="uid://dyrsjy122lnpc" path="res://scenes/rooms/walls/wall_g_8.tscn" id="37_ts2o8"]
 [ext_resource type="PackedScene" uid="uid://bv4cb0qfh0wc" path="res://scenes/rooms/walls/wall_g_2_doors.tscn" id="38_dlpq4"]
 [ext_resource type="PackedScene" uid="uid://cydkd4h04dvea" path="res://scenes/rooms/ceiling/ceiling_g_1.tscn" id="42_742nn"]
@@ -2572,6 +2573,14 @@ transform = Transform3D(1, 0, -1.7484555e-07, 0, 1, 0, 1.7484555e-07, 0, 1, -84,
 [node name="Wall2D2" parent="Rooms/RoomD/Walls" unique_id=1762474553 instance=ExtResource("23_t5ig8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62, 0, -52)
 
+[node name="Drains" type="Node3D" parent="Rooms/RoomD" unique_id=742118010]
+
+[node name="Drain" parent="Rooms/RoomD/Drains" unique_id=583795147 instance=ExtResource("37_aqqoi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, -4, -83)
+
+[node name="Drain2" parent="Rooms/RoomD/Drains" unique_id=1877446292 instance=ExtResource("37_aqqoi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43, -4, -79)
+
 [node name="RoomE" type="Node3D" parent="Rooms" unique_id=1953486125]
 metadata/_edit_lock_ = true
 
@@ -3719,6 +3728,7 @@ transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 4, -
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4.2531133, -4, 42)
 
 [node name="Lights" type="Node3D" parent="Rooms" unique_id=981596609]
+visible = false
 
 [node name="LightBig" parent="Rooms/Lights" unique_id=433713529 instance=ExtResource("54_btwwl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4, -1)

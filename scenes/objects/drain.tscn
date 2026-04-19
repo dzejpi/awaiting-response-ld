@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bukyo15gp3qip"]
+
+[ext_resource type="PackedScene" uid="uid://dk62cuk6ajfll" path="res://assets/3d/objects/blend_export/obj_drain.gltf" id="1_lfadv"]
+[ext_resource type="PackedScene" uid="uid://cj3dopwdsfcto" path="res://scenes/rooms/signal_scene.tscn" id="2_0iur0"]
+
+[node name="Drain" unique_id=583795147 instance=ExtResource("1_lfadv")]
+
+[node name="SignalScene" parent="." index="1" unique_id=1797278511 instance=ExtResource("2_0iur0")]

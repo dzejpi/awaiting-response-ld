@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bekqk2x1yylam"]
+
+[ext_resource type="PackedScene" uid="uid://cawequuok0wxo" path="res://assets/3d/objects/blend_export/obj_wall_sign_no_entry.gltf" id="1_ji5a7"]
+
+[node name="WallSignNoEntry" unique_id=2052554958 instance=ExtResource("1_ji5a7")]
