@@ -62,6 +62,8 @@ var current_signal_receiving: float = 0.0
 var current_signal_amount_target: float = 0.0
 var current_signal_receiving_target: float = 0.0
 
+var is_controllable: bool = true
+
 
 func _ready() -> void:
 	GlobalVar.reset_game()
@@ -82,6 +84,9 @@ func _process(delta: float) -> void:
 	if not GlobalVar.is_game_active:
 		return
 	
+	if !is_controllable:
+		return
+	
 	check_signal_amount()
 	adjust_shader()
 	
@@ -92,6 +97,9 @@ func _process(delta: float) -> void:
 func _physics_process(delta: float) -> void:
 	# Not processing at all if the game isn't active
 	if not GlobalVar.is_game_active:
+		return
+	
+	if !is_controllable:
 		return
 	
 	# Camera movement
