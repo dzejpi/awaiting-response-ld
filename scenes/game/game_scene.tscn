@@ -70,12 +70,12 @@
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_psv6s"]
 
-[sub_resource type="Sky" id="Sky_v1kyu"]
+[sub_resource type="Sky" id="Sky_dgv3i"]
 sky_material = SubResource("ProceduralSkyMaterial_psv6s")
 
 [sub_resource type="Environment" id="Environment_7nmuq"]
 background_mode = 2
-sky = SubResource("Sky_v1kyu")
+sky = SubResource("Sky_dgv3i")
 fog_mode = 1
 fog_density = 1.0
 fog_depth_end = 125.0

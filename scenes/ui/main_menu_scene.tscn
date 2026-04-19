@@ -13,6 +13,7 @@
 [ext_resource type="Script" uid="uid://dfv48yhehicjk" path="res://scripts/ui/button_credits.gd" id="8_8g4id"]
 [ext_resource type="Theme" uid="uid://byelsx85tld85" path="res://themes/theme_buttons.tres" id="8_irpsw"]
 [ext_resource type="Script" uid="uid://cshuwkeu1sjve" path="res://scripts/ui/button_back.gd" id="12_84rwi"]
+[ext_resource type="PackedScene" uid="uid://cwd8aes2304x2" path="res://scenes/game/background_scene.tscn" id="14_3y6pr"]
 
 [node name="MainMenuScene" type="Node2D" unique_id=963244545]
 script = ExtResource("1_mj8q0")
@@ -180,6 +181,10 @@ theme = ExtResource("8_irpsw")
 text = "Back to menu"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Background" type="Node3D" parent="." unique_id=172807666]
+
+[node name="BackgroundScene" parent="Background" unique_id=881384542 instance=ExtResource("14_3y6pr")]
 
 [connection signal="mouse_entered" from="MainMenuSection/MenuButtons/NewGameButton" to="MainMenuSection/MenuButtons/NewGameButton" method="_on_mouse_entered"]
 [connection signal="pressed" from="MainMenuSection/MenuButtons/NewGameButton" to="MainMenuSection/MenuButtons/NewGameButton" method="_on_pressed"]
