@@ -20,7 +20,7 @@ script = ExtResource("1_mj8q0")
 [node name="MainMenuSection" type="Node2D" parent="." unique_id=1629997612]
 
 [node name="MenuButtons" type="Node2D" parent="MainMenuSection" unique_id=2026822086]
-position = Vector2(128, 224)
+position = Vector2(128, 194)
 
 [node name="NewGameButton" type="TextureButton" parent="MainMenuSection/MenuButtons" unique_id=1708036996]
 offset_right = 40.0
@@ -43,10 +43,9 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="MusicButton" type="TextureButton" parent="MainMenuSection/MenuButtons" unique_id=946175738]
-visible = false
-offset_top = 96.0
+offset_top = 98.0
 offset_right = 256.0
-offset_bottom = 160.0
+offset_bottom = 162.0
 focus_neighbor_top = NodePath("../NewGameButton")
 focus_neighbor_bottom = NodePath("../SoundsButton")
 toggle_mode = true
@@ -91,9 +90,9 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="CreditsButton" type="TextureButton" parent="MainMenuSection/MenuButtons" unique_id=970107685 node_paths=PackedStringArray("main_menu_scene")]
-offset_top = 96.0
+offset_top = 191.0
 offset_right = 256.0
-offset_bottom = 160.0
+offset_bottom = 255.0
 focus_neighbor_top = NodePath("../SoundsButton")
 focus_neighbor_bottom = NodePath("../QuitGameButton")
 texture_normal = ExtResource("1_kpkvn")
@@ -114,9 +113,9 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="QuitGameButton" type="TextureButton" parent="MainMenuSection/MenuButtons" unique_id=821364300]
-offset_top = 192.0
+offset_top = 287.0
 offset_right = 256.0
-offset_bottom = 256.0
+offset_bottom = 351.0
 focus_neighbor_top = NodePath("../CreditsButton")
 texture_normal = ExtResource("1_kpkvn")
 texture_pressed = ExtResource("2_wuwa5")

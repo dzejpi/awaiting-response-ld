@@ -21,9 +21,9 @@ func _on_pressed() -> void:
 func update_music_state() -> void:
 	AudioServer.set_bus_mute(music_bus, not is_music_on)
 	if is_music_on:
-		music_label.text = "Music: on" 
+		music_label.text = "Buzzing: on" 
 	else:
-		music_label.text = "Music: off"
+		music_label.text = "Buzzing: off"
 	
 	button_pressed = is_music_on
 
