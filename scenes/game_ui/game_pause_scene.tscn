@@ -9,12 +9,14 @@
 [ext_resource type="Script" uid="uid://cd13na0s0fngu" path="res://scripts/game_ui/button_continue_game.gd" id="6_hntig"]
 [ext_resource type="Script" uid="uid://c04chxywvtrck" path="res://scripts/game_ui/button_main_menu.gd" id="6_yyb44"]
 [ext_resource type="Script" uid="uid://byhw5fvkbh3qy" path="res://scripts/ui/button_music.gd" id="7_4n1ho"]
+[ext_resource type="Theme" uid="uid://byelsx85tld85" path="res://themes/theme_buttons.tres" id="8_lh4nw"]
 [ext_resource type="Script" uid="uid://gqgyou2kc33q" path="res://scripts/ui/button_sounds.gd" id="8_mlp05"]
 
 [node name="GamePauseScene" type="Node2D" unique_id=1711271011]
 script = ExtResource("1_lp3de")
 
 [node name="PauseButtons" type="Node2D" parent="." unique_id=133396823]
+position = Vector2(128, 256)
 
 [node name="ContinueGameButton" type="TextureButton" parent="PauseButtons" unique_id=1439782945 node_paths=PackedStringArray("game_pause_scene")]
 offset_right = 256.0
@@ -32,11 +34,13 @@ game_pause_scene = NodePath("../..")
 layout_mode = 0
 offset_right = 256.0
 offset_bottom = 64.0
+theme = ExtResource("8_lh4nw")
 text = "Continue"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="MusicButton" type="TextureButton" parent="PauseButtons" unique_id=1986647430]
+visible = false
 offset_top = 96.0
 offset_right = 256.0
 offset_bottom = 160.0
@@ -54,11 +58,13 @@ script = ExtResource("7_4n1ho")
 layout_mode = 0
 offset_right = 256.0
 offset_bottom = 64.0
+theme = ExtResource("8_lh4nw")
 text = "Music: on"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="SoundsButton" type="TextureButton" parent="PauseButtons" unique_id=2047112191]
+visible = false
 offset_top = 192.0
 offset_right = 256.0
 offset_bottom = 256.0
@@ -76,14 +82,15 @@ script = ExtResource("8_mlp05")
 layout_mode = 0
 offset_right = 256.0
 offset_bottom = 64.0
+theme = ExtResource("8_lh4nw")
 text = "Sounds: on"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="MainMenuButton" type="TextureButton" parent="PauseButtons" unique_id=602905199]
-offset_top = 288.0
+offset_top = 96.0
 offset_right = 256.0
-offset_bottom = 352.0
+offset_bottom = 160.0
 focus_neighbor_top = NodePath("../SoundsButton")
 texture_normal = ExtResource("1_fati3")
 texture_pressed = ExtResource("2_o2o55")
@@ -96,6 +103,7 @@ script = ExtResource("6_yyb44")
 layout_mode = 0
 offset_right = 256.0
 offset_bottom = 64.0
+theme = ExtResource("8_lh4nw")
 text = "Main menu"
 horizontal_alignment = 1
 vertical_alignment = 1

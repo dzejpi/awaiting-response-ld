@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://h112eo27xlwv"]
+
+[ext_resource type="PackedScene" uid="uid://dwo3wdrpht5fv" path="res://assets/3d/objects/blend_export/obj_red_button.gltf" id="1_sf1vr"]
+[ext_resource type="PackedScene" uid="uid://cj3dopwdsfcto" path="res://scenes/rooms/signal_scene.tscn" id="2_it0e2"]
+
+[node name="RedButton" unique_id=979633793 instance=ExtResource("1_sf1vr")]
+
+[node name="SignalScene" parent="." index="1" unique_id=1797278511 instance=ExtResource("2_it0e2")]

@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://c8a0x7hr30fvs"]
 
 [ext_resource type="PackedScene" uid="uid://bj0yihmsgoofe" path="res://assets/3d/objects/blend_export/obj_phone.gltf" id="1_hnx3s"]
+[ext_resource type="PackedScene" uid="uid://cj3dopwdsfcto" path="res://scenes/rooms/signal_scene.tscn" id="2_n0ppv"]
 
 [node name="Phone" unique_id=1823915594 instance=ExtResource("1_hnx3s")]
+
+[node name="SignalScene" parent="." index="1" unique_id=1797278511 instance=ExtResource("2_n0ppv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
