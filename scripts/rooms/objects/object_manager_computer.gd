@@ -2,7 +2,11 @@ extends Node3D
 
 
 @onready var computer_full: Node3D = $".."
+@onready var computer_label: Label3D = $"../ComputerLabel"
+@onready var signal_scene: Node3D = $"../SignalScene"
+
 
 
 func process_object_interaction() -> void:
-	pass
+	computer_label.text = "Triangulating..."
+	signal_scene.queue_free()

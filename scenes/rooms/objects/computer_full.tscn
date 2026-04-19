@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://c3q1i4mgrid8t" path="res://scenes/rooms/objects/computer_keyboard.tscn" id="3_sy4ry"]
 [ext_resource type="PackedScene" uid="uid://cj3dopwdsfcto" path="res://scenes/rooms/signal_scene.tscn" id="5_sy4ry"]
 [ext_resource type="Script" uid="uid://0ydiw5qovo43" path="res://scripts/rooms/objects/object_manager_computer.gd" id="6_6te8e"]
+[ext_resource type="FontFile" uid="uid://46bshovhdl6w" path="res://assets/fonts/kenney_fontpackage/fonts/kenney_pixel.ttf" id="7_xvxjh"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6te8e"]
 size = Vector3(0.5, 0.60339355, 0.67041016)
@@ -32,3 +33,16 @@ shape = SubResource("BoxShape3D_6te8e")
 
 [node name="ObjectManager" type="Node3D" parent="." unique_id=1609887544]
 script = ExtResource("6_6te8e")
+
+[node name="ComputerLabel" type="Label3D" parent="." unique_id=1352012691]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0.2447097, 0.44482914, -0.5038112)
+texture_filter = 0
+text = "System failure
+Please restart"
+font = ExtResource("7_xvxjh")
+font_size = 12
+outline_size = 0
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=2102584011]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.31391168, 0.2625674, -0.15347636)
+spot_range = 2.0

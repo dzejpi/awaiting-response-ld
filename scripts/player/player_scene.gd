@@ -146,6 +146,8 @@ func process_collisions() -> void:
 				if !was_object_used:
 					collision_item.get_parent().interact_with_object()
 					increase_signal_amount(damage_amount)
+					change_receiving_signal_amount(0.0)
+					player_tooltip.dismiss_tooltip()
 		
 		if collision_object != last_looked_at:
 			last_looked_at = collision_object

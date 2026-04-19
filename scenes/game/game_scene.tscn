@@ -91,7 +91,6 @@ size = Vector3(22, 4, 4)
 script = ExtResource("1_5lbu1")
 
 [node name="PlayerScene" parent="." unique_id=1842138678 instance=ExtResource("2_3l0ia")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 0, -79)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=474206427]
 environment = SubResource("Environment_7nmuq")

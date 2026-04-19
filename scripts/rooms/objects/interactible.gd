@@ -11,6 +11,7 @@ extends Node3D
 func interact_with_object() -> void:
 	has_dealt_damage = true
 	tooltip = ""
+	object_manager.process_object_interaction()
 
 
 func get_damage_amount():
