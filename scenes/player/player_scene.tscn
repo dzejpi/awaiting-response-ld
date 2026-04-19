@@ -83,3 +83,4 @@ offset_bottom = 96.0
 
 [node name="NoisePlayer" type="AudioStreamPlayer2D" parent="." unique_id=473729899]
 stream = ExtResource("9_fl557")
+volume_db = -80.0
