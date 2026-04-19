@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cfeej28j2l77p"]
+
+[ext_resource type="Script" uid="uid://cwpwxuddwuvlc" path="res://scripts/game/voice_scene.gd" id="1_0smmx"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nj4yj"]
+size = Vector3(8, 4, 1)
+
+[node name="VoiceScene" type="Area3D" unique_id=1786297467]
+script = ExtResource("1_0smmx")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=489405815]
+shape = SubResource("BoxShape3D_nj4yj")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
